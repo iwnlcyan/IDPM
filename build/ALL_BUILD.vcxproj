@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3371575-7768-35B1-BAF9-1A3A93F9C24C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeSystem.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIOutput.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIQt.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\OpenMeshPackage.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\fixbundle.cmake.win.in;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\openmesh.pc.in;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.19\Modules\CPack.cmake;E:\cmake\share\cmake-3.19\Modules\CPackComponent.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\cmake\share\cmake-3.19\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeSystem.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIOutput.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIQt.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\OpenMeshPackage.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\fixbundle.cmake.win.in;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\openmesh.pc.in;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.19\Modules\CPack.cmake;E:\cmake\share\cmake-3.19\Modules\CPackComponent.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\cmake\share\cmake-3.19\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeSystem.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIOutput.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIQt.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\OpenMeshPackage.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\fixbundle.cmake.win.in;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\openmesh.pc.in;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.19\Modules\CPack.cmake;E:\cmake\share\cmake-3.19\Modules\CPackComponent.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\cmake\share\cmake-3.19\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeCXXCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeRCCompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\3.19.4\CMakeSystem.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIOutput.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIQt.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\OpenMeshPackage.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake\fixbundle.cmake.win.in;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\openmesh.pc.in;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCXXInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeGenericSystem.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeInitializeConfigs.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeRCInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInformation.cmake;E:\cmake\share\cmake-3.19\Modules\CMakeSystemSpecificInitialize.cmake;E:\cmake\share\cmake-3.19\Modules\CPack.cmake;E:\cmake\share\cmake-3.19\Modules\CPackComponent.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Compiler\MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\Windows.cmake;E:\cmake\share\cmake-3.19\Modules\Platform\WindowsPaths.cmake;E:\cmake\share\cmake-3.19\Templates\CPackConfig.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{BF17CF10-697D-38C2-8E53-1E0B93988ED6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Analyzer\Analyzer.vcxproj">
+      <Project>{9DC589AD-982E-316C-A271-07BBA99A4331}</Project>
+      <Name>Analyzer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\DecimaterGui\DecimaterGui.vcxproj">
+      <Project>{258E0F2A-17D9-3D5A-AB5D-D374B421FA51}</Project>
+      <Name>DecimaterGui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Dualizer\Dualizer.vcxproj">
+      <Project>{4A2B7C6F-CE29-39C9-8DE3-364698712341}</Project>
+      <Name>Dualizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM.vcxproj">
+      <Project>{5A7D53DB-ECF0-322A-8B8E-B54C246FAC57}</Project>
+      <Name>IDPM</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Core\OpenMeshCore.vcxproj">
+      <Project>{5451CA5B-401E-32DB-9289-6936586E7A37}</Project>
+      <Name>OpenMeshCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Tools\OpenMeshTools.vcxproj">
+      <Project>{57AB4AC5-4B65-3DF5-9B3F-CC775495EF5C}</Project>
+      <Name>OpenMeshTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\ProgViewer\ProgViewer.vcxproj">
+      <Project>{87B36C20-4942-3073-87CB-3B3F8273B89F}</Project>
+      <Name>ProgViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\QtViewer\QtViewer.vcxproj">
+      <Project>{0141671E-7D5A-3247-AF5B-6D4784FFC864}</Project>
+      <Name>QtViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Smoothing\Smoothing.vcxproj">
+      <Project>{7A547B8B-4E4B-37E5-82CB-98EA7FA9ED68}</Project>
+      <Name>Smoothing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\SubdividerGui\SubdividerGui.vcxproj">
+      <Project>{3274AF6F-2DBB-3566-82E0-EC6DA4D5A70C}</Project>
+      <Name>SubdividerGui</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Synthesizer.vcxproj">
+      <Project>{588BA599-7AEA-3FD1-801D-E28E69BC40D0}</Project>
+      <Name>Synthesizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineAdaptiveSubdivider\commandlineAdaptiveSubdivider.vcxproj">
+      <Project>{6EAFF5F8-F903-3FBF-8528-DC8AD2A676A4}</Project>
+      <Name>commandlineAdaptiveSubdivider</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\commandlineDecimater\commandlineDecimater.vcxproj">
+      <Project>{7DCE3FFE-21CC-3AA3-B8F1-28EF43915637}</Project>
+      <Name>commandlineDecimater</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineSubdivider\commandlineSubdivider.vcxproj">
+      <Project>{29D420E3-67FE-349F-801B-340124C2CF31}</Project>
+      <Name>commandlineSubdivider</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\fixbundle.vcxproj">
+      <Project>{F84B1757-04F4-3442-AABF-7D730EC455BA}</Project>
+      <Name>fixbundle</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\mconvert\mconvert.vcxproj">
+      <Project>{7204017F-7D50-3B43-B007-AAC25E0C5037}</Project>
+      <Name>mconvert</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\mkbalancedpm\mkbalancedpm.vcxproj">
+      <Project>{E766D8B0-9382-3038-BE45-0F8C1FDCA7AE}</Project>
+      <Name>mkbalancedpm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

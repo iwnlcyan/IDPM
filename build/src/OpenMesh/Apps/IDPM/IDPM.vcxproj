@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A7D53DB-ECF0-322A-8B8E-B54C246FAC57}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>IDPM</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IDPM.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IDPM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IDPM.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IDPM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IDPM.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IDPM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IDPM.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IDPM</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Debug;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Debug;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Debug;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target IDPM</Message>
+      <Command>setlocal
+cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM"
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Debug/IDPM.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./IDPM.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Core\Debug\OpenMeshCored.lib;..\..\Tools\Debug\OpenMeshToolsd.lib;..\..\Core\Debug\OpenMeshCored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Debug/IDPM.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Debug/IDPM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Release;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Release;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_Release;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target IDPM</Message>
+      <Command>setlocal
+cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM"
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Release/IDPM.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./IDPM.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Core\Release\OpenMeshCore.lib;..\..\Tools\Release\OpenMeshTools.lib;..\..\Core\Release\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Release/IDPM.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/Release/IDPM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_MinSizeRel;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_MinSizeRel;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_MinSizeRel;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target IDPM</Message>
+      <Command>setlocal
+cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM"
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/MinSizeRel/IDPM.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./IDPM.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Core\MinSizeRel\OpenMeshCore.lib;..\..\Tools\MinSizeRel\OpenMeshTools.lib;..\..\Core\MinSizeRel\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/MinSizeRel/IDPM.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/MinSizeRel/IDPM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_RelWithDebInfo;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_NO_DEBUG;INCLUDE_TEMPLATES;_USE_MATH_DEFINES;NOMINMAX;_CRT_SECURE_NO_WARNINGS;QT_VERSION_MAJOR=5;QT_VERSION_MINOR=9;QT_VERSION_PATCH=7;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_RelWithDebInfo;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\include_RelWithDebInfo;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target IDPM</Message>
+      <Command>setlocal
+cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM"
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/RelWithDebInfo/IDPM.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./IDPM.exe"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\Core\RelWithDebInfo\OpenMeshCore.lib;..\..\Tools\RelWithDebInfo\OpenMeshTools.lib;..\..\Core\RelWithDebInfo\OpenMeshCore.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/RelWithDebInfo/IDPM.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/RelWithDebInfo/IDPM.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\IDPM\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\cmake\bin\cmake.exe "-SE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" "-BE:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build" --check-stamp-file "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\MSVCMacros.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICommon.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCICompiler.cmake;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\cmake-library\VCI\VCIPaths.cmake;E:\cmake\share\cmake-3.19\Modules\AddFileDependencies.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\OpenMesh\Apps\IDPM\test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\IDPM_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="OpenGLtest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{BF17CF10-697D-38C2-8E53-1E0B93988ED6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Core\OpenMeshCore.vcxproj">
+      <Project>{5451CA5B-401E-32DB-9289-6936586E7A37}</Project>
+      <Name>OpenMeshCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Tools\OpenMeshTools.vcxproj">
+      <Project>{57AB4AC5-4B65-3DF5-9B3F-CC775495EF5C}</Project>
+      <Name>OpenMeshTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
+    <Import Project="packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
+    <Error Condition="!Exists('packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+  </Target>
+</Project>

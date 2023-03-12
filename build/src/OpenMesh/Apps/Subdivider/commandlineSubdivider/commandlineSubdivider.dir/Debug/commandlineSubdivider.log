@@ -1,0 +1,56 @@
+﻿  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/Subdivider/commandlineSubdivider/CMakeLists.txt
+  subdivider.cc
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/LoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/CompositeLoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\core\geometry\Vector11T.hh(240): warning C4244: “*=”: 从“const OtherScalar”转换到“_Ty”，可能丢失数据
+          with
+          [
+              OtherScalar=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/Sqrt3InterpolatingSubdividerLabsikGreinerT.hh(365): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator *=<double>(const OtherScalar &)”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/Sqrt3InterpolatingSubdividerLabsikGreinerT.hh(365): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator *=<double>(const OtherScalar &)”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/Sqrt3InterpolatingSubdividerLabsikGreinerT.hh(197): note: 编译 类 模板 成员函数 "bool OpenMesh::Subdivider::Uniform::InterpolatingSqrt3LGT<Mesh,double>::subdivide(MeshType &,size_t,const bool)" 时
+          with
+          [
+              MeshType=Mesh
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\subdivider.cc(126): note: 参见对正在编译的 类 模板 实例化 "OpenMesh::Subdivider::Uniform::InterpolatingSqrt3LGT<Mesh,double>" 的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\subdivider.cc(262): note: 参见对正在编译的函数 模板 实例化“int mainT<InterpolatingSqrt3LG>(size_t,const std::string &,const std::string &,const OpenMesh::Utils::Timer::Format)”的引用
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\core\geometry\Vector11T.hh(252): warning C4244: “/=”: 从“const OtherScalar”转换到“_Ty”，可能丢失数据
+          with
+          [
+              OtherScalar=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/ModifiedButterFlyT.hh(543): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator /=<RealType>(const OtherScalar &)”的引用
+          with
+          [
+              RealType=double,
+              OtherScalar=double
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/ModifiedButterFlyT.hh(543): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator /=<RealType>(const OtherScalar &)”的引用
+          with
+          [
+              RealType=double,
+              OtherScalar=double
+          ]
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/ModifiedButterFlyT.hh(377): note: 编译 类 模板 成员函数 "void OpenMesh::Subdivider::Uniform::ModifiedButterflyT<Mesh,double>::compute_midpoint(OpenMesh::TriMesh_ArrayKernelT<OpenMesh::DefaultTraits> &,const OpenMesh::EdgeHandle &)" 时
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/ModifiedButterFlyT.hh(203): note: 参见对正在编译的函数 模板 实例化“void OpenMesh::Subdivider::Uniform::ModifiedButterflyT<Mesh,double>::compute_midpoint(OpenMesh::TriMesh_ArrayKernelT<OpenMesh::DefaultTraits> &,const OpenMesh::EdgeHandle &)”的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\subdivider.cc(126): note: 参见对正在编译的 类 模板 实例化 "OpenMesh::Subdivider::Uniform::ModifiedButterflyT<Mesh,double>" 的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\subdivider.cc(263): note: 参见对正在编译的函数 模板 实例化“int mainT<ModifiedButterfly>(size_t,const std::string &,const std::string &,const OpenMesh::Utils::Timer::Format)”的引用
+  commandlineSubdivider.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineSubdivider\Debug\commandlineSubdivider.exe

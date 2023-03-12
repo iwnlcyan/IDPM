@@ -1,0 +1,9 @@
+﻿  Automatic MOC for target DecimaterGui
+  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/Decimating/DecimaterGui/CMakeLists.txt
+  mocs_compilation.cpp
+  QGLViewerWidget.cc
+  MeshViewerWidget.cc
+  DecimaterViewerWidget.cc
+  decimaterviewer.cc
+  正在生成代码...
+  DecimaterGui.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\DecimaterGui\Release\DecimaterGui.exe

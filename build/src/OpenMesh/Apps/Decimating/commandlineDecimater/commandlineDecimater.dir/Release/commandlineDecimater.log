@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/Decimating/commandlineDecimater/CMakeLists.txt
+  decimater.cc
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Decimating\commandlineDecimater\..\..\..\..\OpenMesh/Tools/Decimater/ModRoundnessT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\decimater\modedgelengtht.hh(93): warning C4756: 常量算法中溢出
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\decimater\modedgelengtht.hh(93): warning C4756: 常量算法中溢出
+  commandlineDecimater.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\commandlineDecimater\Release\commandlineDecimater.exe

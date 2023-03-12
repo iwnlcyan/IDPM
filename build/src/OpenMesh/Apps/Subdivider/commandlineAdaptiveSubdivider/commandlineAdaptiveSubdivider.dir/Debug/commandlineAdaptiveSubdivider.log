@@ -1,0 +1,49 @@
+﻿  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/Subdivider/commandlineAdaptiveSubdivider/CMakeLists.txt
+  adaptive_subdivider.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\RulesT_impl.hh(832): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\CompositeT_impl.hh(153): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\CompositeT_impl.hh(78): note: 编译 类 模板 成员函数 "bool OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::initialize(void)" 时
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(273): note: 参见对正在编译的函数 模板 实例化“bool OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::initialize(void)”的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(83): note: 参见对正在编译的 类 模板 实例化 "OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>" 的引用
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\CompositeT_impl.hh(154): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\CompositeT_impl.hh(181): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\CompositeT_impl.hh(175): note: 编译 类 模板 成员函数 "void OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::refine(OpenMesh::FaceHandle &)" 时
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(315): note: 参见对正在编译的函数 模板 实例化“void OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::refine(OpenMesh::FaceHandle &)”的引用
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Adaptive/Composite/CompositeT.hh(205): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(83): note: 参见对正在编译的函数 模板 实例化“OpenMesh::Subdivider::Adaptive::RuleHandleT<OpenMesh::Subdivider::Adaptive::Tvv3<MyMesh>> OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::add<OpenMesh::Subdivider::Adaptive::Tvv3<MyMesh>>(void)”的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(83): note: 参见对正在编译的函数 模板 实例化“OpenMesh::Subdivider::Adaptive::RuleHandleT<OpenMesh::Subdivider::Adaptive::Tvv3<MyMesh>> OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::add<OpenMesh::Subdivider::Adaptive::Tvv3<MyMesh>>(void)”的引用
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\core\geometry\Vector11T.hh(240): warning C4244: “*=”: 从“const OtherScalar”转换到“_Ty”，可能丢失数据
+          with
+          [
+              OtherScalar=double
+          ]
+          and
+          [
+              _Ty=float
+          ]
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\core\geometry\Vector11T.hh(264): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator *=<OtherScalar>(const OtherScalar &)”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\core\geometry\Vector11T.hh(264): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> &OpenMesh::VectorT<float,3>::operator *=<OtherScalar>(const OtherScalar &)”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\RulesT_impl.hh(605): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> OpenMesh::VectorT<float,3>::operator *<double>(const OtherScalar &) const”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\RulesT_impl.hh(605): note: 参见对正在编译的函数 模板 实例化“OpenMesh::VectorT<float,3> OpenMesh::VectorT<float,3>::operator *<double>(const OtherScalar &) const”的引用
+          with
+          [
+              OtherScalar=double
+          ]
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\RulesT_impl.hh(339): note: 编译 类 模板 成员函数 "void OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>::raise(OpenMesh::FaceHandle &,OpenMesh::Subdivider::Adaptive::state_t)" 时
+  e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\tools\subdivider\adaptive\composite\RulesT_impl.hh(668): note: 参见对正在编译的函数 模板 实例化“void OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>::raise(OpenMesh::FaceHandle &,OpenMesh::Subdivider::Adaptive::state_t)”的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Adaptive/Composite/CompositeT.hh(204): note: 参见对正在编译的 类 模板 实例化 "OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>" 的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(84): note: 参见对正在编译的函数 模板 实例化“OpenMesh::Subdivider::Adaptive::RuleHandleT<OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>> OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::add<OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>>(void)”的引用
+  E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\adaptive_subdivider.cc(84): note: 参见对正在编译的函数 模板 实例化“OpenMesh::Subdivider::Adaptive::RuleHandleT<OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>> OpenMesh::Subdivider::Adaptive::CompositeT<MyMesh>::add<OpenMesh::Subdivider::Adaptive::Tvv4<MyMesh>>(void)”的引用
+  commandlineAdaptiveSubdivider.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineAdaptiveSubdivider\Debug\commandlineAdaptiveSubdivider.exe

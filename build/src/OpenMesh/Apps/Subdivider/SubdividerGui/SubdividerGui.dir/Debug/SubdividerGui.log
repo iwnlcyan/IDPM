@@ -1,0 +1,13 @@
+﻿  Automatic MOC for target SubdividerGui
+  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/Subdivider/SubdividerGui/CMakeLists.txt
+  mocs_compilation.cpp
+  QGLViewerWidget.cc
+  SubdivideWidget.cc
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/CompositeLoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh/Tools/Subdivider/Uniform/LoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  qtsubdivider.cc
+  正在生成代码...
+qtmain.lib(qtmain_win.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“0”不匹配值“2”(mocs_compilation.obj 中)
+qtmain.lib(qtmain_win.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(mocs_compilation.obj 中)
+MSVCRTD.lib(initializers.obj) : warning LNK4098: 默认库“msvcrt.lib”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\SubdividerGui\Debug\SubdividerGui.exe : fatal error LNK1319: 检测到 2 个不匹配项

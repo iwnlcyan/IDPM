@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/cmake-library/VCI/MSVCMacros.cmake
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/cmake-library/VCI/VCICommon.cmake
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/cmake-library/VCI/VCICompiler.cmake
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/cmake-library/VCI/VCIPaths.cmake
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt
+E:/cmake/share/cmake-3.19/Modules/AddFileDependencies.cmake

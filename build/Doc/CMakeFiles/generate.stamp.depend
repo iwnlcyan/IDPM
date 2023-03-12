@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/Doc/CMakeLists.txt
+E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/cmake-library/VCI/VCIDoxygen.cmake
+E:/cmake/share/cmake-3.19/Modules/FindDoxygen.cmake
+E:/cmake/share/cmake-3.19/Modules/FindPackageHandleStandardArgs.cmake
+E:/cmake/share/cmake-3.19/Modules/FindPackageMessage.cmake
