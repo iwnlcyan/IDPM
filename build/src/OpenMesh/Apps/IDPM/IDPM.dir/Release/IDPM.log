@@ -1,6 +1,23 @@
 ﻿  Automatic MOC for target IDPM
-  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt
-  test.cpp
   mocs_compilation.cpp
+  OpenGLtest.cpp
+OpenGLtest.cpp(25): warning C4305: “初始化”: 从“double”到“float”截断
+OpenGLtest.cpp(94): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+OpenGLtest.cpp(260): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(263): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(266): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(269): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(282): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(283): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(292): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(294): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(296): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(299): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(305): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(307): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(309): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(312): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(323): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(326): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
   正在生成代码...
   IDPM.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Release\IDPM.exe

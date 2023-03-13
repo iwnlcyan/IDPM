@@ -4,61 +4,91 @@
   --   dirs='E:/anaconda/Library/bin'
   --   ignoreItems=''
   -- fixup_bundle: preparing...
+  -- 
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
+CUSTOMBUILD : -- warning : gp_resolved_file_type non-absolute file 'freeglut.dll' returning type 'other' -- possibly incorrect
+  -- 
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
+  -- 
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
   -- fixup_bundle: copying...
-  -- 1/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe'
-  -- 2/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Analyzer.exe'
-  -- 3/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/DecimaterGui.exe'
-  -- 4/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Core.dll'
+  -- 1/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe'
+  -- 2/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Analyzer.exe'
+  -- 3/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/DecimaterGui.exe'
+  -- 4/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Core.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 5/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Gui.dll'
+  -- 5/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Gui.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 6/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5OpenGL.dll'
+  -- 6/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5OpenGL.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 7/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Widgets.dll'
+  -- 7/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Widgets.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 8/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icudt58.dll'
+  -- 8/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icudt58.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 9/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuin58.dll'
+  -- 9/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuin58.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 10/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuuc58.dll'
+  -- 10/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuuc58.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 11/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/libpng16.dll'
+  -- 11/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/libpng16.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 12/44: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/zlib.dll'
+  -- 12/48: copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/zlib.dll'
 CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying...
-  -- 13/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Dualizer.exe'
-  -- 14/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe'
-  -- 15/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe'
-  -- 16/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe'
-  -- 17/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe'
-  -- 18/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe'
-  -- 19/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe'
-  -- 20/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe'
-  -- 21/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe'
-  -- 22/44: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe'
+  -- 13/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Dualizer.exe'
+  -- 14/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/IDPM.exe'
+  -- 15/48: copying 'freeglut.dll'
+  Error copying file "freeglut.dll" to "E:/1KMD鐠囧墽鈻?Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/freeglut.dll".
+  -- 16/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe'
+  -- 17/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe'
+  -- 18/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe'
+  -- 19/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe'
+  -- 20/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe'
+  -- 21/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe'
+  -- 22/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe'
+  -- 23/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe'
+  -- 24/48: *NOT* copying 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe'
   -- fixup_bundle: fixing...
-  -- 23/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe'
-  -- 24/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Analyzer.exe'
-  -- 25/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/DecimaterGui.exe'
-  -- 26/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Core.dll'
-  -- 27/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Gui.dll'
-  -- 28/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5OpenGL.dll'
-  -- 29/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Widgets.dll'
-  -- 30/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icudt58.dll'
-  -- 31/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuin58.dll'
-  -- 32/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuuc58.dll'
-  -- 33/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/libpng16.dll'
-  -- 34/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/zlib.dll'
-  -- 35/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Dualizer.exe'
-  -- 36/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe'
-  -- 37/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe'
-  -- 38/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe'
-  -- 39/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe'
-  -- 40/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe'
-  -- 41/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe'
-  -- 42/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe'
-  -- 43/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe'
-  -- 44/44: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe'
+  -- 25/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe'
+  -- 26/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Analyzer.exe'
+  -- 27/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/DecimaterGui.exe'
+  -- 28/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Core.dll'
+  -- 29/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Gui.dll'
+  -- 30/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5OpenGL.dll'
+  -- 31/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Qt5Widgets.dll'
+  -- 32/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icudt58.dll'
+  -- 33/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuin58.dll'
+  -- 34/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/icuuc58.dll'
+  -- 35/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/libpng16.dll'
+  -- 36/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/zlib.dll'
+  -- 37/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Dualizer.exe'
+  -- 38/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/IDPM.exe'
+  -- 39/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/freeglut.dll'
+  -- 40/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe'
+  -- 41/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe'
+  -- 42/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe'
+  -- 43/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe'
+  -- 44/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe'
+  -- 45/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe'
+  -- 46/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe'
+  -- 47/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe'
+  -- 48/48: fix-up not required on this platform 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe'
   -- fixup_bundle: cleaning up...
   -- fixup_bundle: verifying...
   -- ===========================================================================
@@ -69,20 +99,53 @@ CUSTOMBUILD : -- warning : resolved_item == resolved_embedded_item - not copying
   -- executable file 1: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Analyzer.exe
   -- executable file 2: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/DecimaterGui.exe
   -- executable file 3: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Dualizer.exe
-  -- executable file 4: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe
-  -- executable file 5: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe
-  -- executable file 6: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe
-  -- executable file 7: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe
-  -- executable file 8: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe
-  -- executable file 9: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe
-  -- executable file 10: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe
-  -- executable file 11: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe
-  -- executable file 12: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe
-  -- executable file 13: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe
-  -- verified='1'
-  -- info='Verified 13 executable files in 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build''
+  -- executable file 4: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/IDPM.exe
   -- 
-  -- verified='1'
-  -- info=''
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
+CUSTOMBUILD : -- warning : gp_resolved_file_type non-absolute file 'freeglut.dll' returning type 'other' -- possibly incorrect
   -- 
-  -- fixup_bundle: done
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
+  -- 
+CUSTOMBUILD : warning : cannot resolve item 'freeglut.dll'
+  
+    possible problems:
+      need more directories?
+      need to use InstallRequiredSystemLibraries?
+      run in install tree instead of build tree?
+  
+CUSTOMBUILD : -- warning : gp_resolved_file_type non-absolute file 'freeglut.dll' returning type 'other' -- possibly incorrect
+  -- executable file 5: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/ProgViewer.exe
+  -- executable file 6: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/QtViewer.exe
+  -- executable file 7: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe
+  -- executable file 8: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/SubdividerGui.exe
+  -- executable file 9: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Synthesizer.exe
+  -- executable file 10: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineAdaptiveSubdivider.exe
+  -- executable file 11: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineDecimater.exe
+  -- executable file 12: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/commandlineSubdivider.exe
+  -- executable file 13: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mconvert.exe
+  -- executable file 14: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/mkbalancedpm.exe
+  -- verified='0'
+  -- info='external prerequisites found:
+  f='E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/IDPM.exe'
+  external_prereqs='freeglut.dll'
+  '
+  -- 
+  CMake Error at E:/cmake/share/cmake-3.19/Modules/BundleUtilities.cmake:1124 (message):
+CUSTOMBUILD : error : verify_app failed
+  Call Stack (most recent call first):
+    E:/cmake/share/cmake-3.19/Modules/BundleUtilities.cmake:991 (verify_app)
+    fixbundle.win.cmake:21 (fixup_bundle)
+  
+  
