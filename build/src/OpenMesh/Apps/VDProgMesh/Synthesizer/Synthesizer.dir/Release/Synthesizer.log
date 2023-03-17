@@ -1,8 +1,19 @@
-﻿  Automatic MOC for target Synthesizer
-  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/VDProgMesh/Synthesizer/CMakeLists.txt
-  mocs_compilation.cpp
-  QGLViewerWidget.cc
-  vdpmsynthesizer.cc
-  VDPMSynthesizerViewerWidget.cc
-  正在生成代码...
-  Synthesizer.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Release\Synthesizer.exe
+﻿E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\ZERO_CHECK.vcxproj' does not exist.
+E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Core\OpenMeshCore.vcxproj' does not exist.
+E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Tools\OpenMeshTools.vcxproj' does not exist.
+  Automatic MOC for target Synthesizer
+  AutoGen: The info file "E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/CMakeFiles/Synthesizer_autogen.dir/AutogenInfo.json" is not readable
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: 命令“setlocal
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer"
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: E:
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/CMakeFiles/Synthesizer_autogen.dir/AutogenInfo.json" Release
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmEnd
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmErrorLevel
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: exit /b %1
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmDone
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :VCEnd”已退出，代码为 1。

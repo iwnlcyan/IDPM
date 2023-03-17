@@ -18,7 +18,7 @@ endfunction(gp_item_default_embedded_path_override)
 include (BundleUtilities)
 
 # fix all dependencies
-fixup_bundle ("E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe" ""  "E:/anaconda/Library/bin")
+fixup_bundle ("E:/1KMD/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe" ""  "E:/qt/5.13.1/msvc2017_64/bin")
 
 
 

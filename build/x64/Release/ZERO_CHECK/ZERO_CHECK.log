@@ -1,20 +1,4 @@
 ﻿  Checking Build System
-  CMake is re-running because E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/CMakeFiles/generate.stamp is out-of-date.
-    the file 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/CMakeLists.txt'
-    is newer than 'E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/CMakeFiles/generate.stamp.depend'
-    result='-1'
-  -- Selecting Windows SDK version 10.0.17763.0 to target Windows 10.0.19044.
-  -- No QT path specified (or does not exist) - searching in common locations...
-  -- Found QT5
-  -- Using QT5 (5.9.7)
-  -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
-  
-  ************************************************************
-  * VCI Buildsystem                                          *
-  *                                                          *
-  * Package : OpenMesh                                       *
-  * Version : 9.0.0                                          *
-  ************************************************************
-  -- Configuring done
-  -- Generating done
-  -- Build files have been written to: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build
+  CMake is re-running because E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/CMakeFiles/generate.stamp dependency file is missing.
+CUSTOMBUILD : CMake error : The source directory "E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0" does not appear to contain CMakeLists.txt.
+  Specify --help for usage, or press the help button on the CMake GUI.

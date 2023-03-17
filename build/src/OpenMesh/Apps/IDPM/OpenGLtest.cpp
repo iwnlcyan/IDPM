@@ -26,17 +26,17 @@ float scale = 0.004;
 
 //文件读取有关的
 MyMesh mesh;  //mesh把文件读取了，封装在mesh对象中
-//"E:\1KMD课程\Research\Illumination Guided LOD\IDPM\Models";
-const string file_1 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\buddha.obj";
-const string file_2 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny.obj";
-const string file_3 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\dragon.obj";
-const string file_4 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\erato.obj";
-const string file_5 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\indonesian_statue.obj";
-const string file_6 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\serapis.obj";
+//"E:\1KMD\Research\Illumination Guided LOD\IDPM\Models";
+const string file_1 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\buddha.obj";
+const string file_2 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny.obj";
+const string file_3 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\dragon.obj";
+const string file_4 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\erato.obj";
+const string file_5 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\indonesian_statue.obj";
+const string file_6 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\serapis.obj";
 //const string file_7 = "G:\\source\\OpenGL\\ObjLoader\\ObjLoader\\ObjLoader\\data\\teddy.obj";
-const string file_7 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
-const string file_8 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
-const string file_9 = "E:\\1KMD课程\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
+const string file_7 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
+const string file_8 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
+const string file_9 = "E:\\1KMD\\Research\\Illumination Guided LOD\\IDPM\\Models\\bunny_lowpoly.obj";
 int currentfile = 1;
 
 GLuint showFaceList, showWireList;
