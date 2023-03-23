@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Synthesizer", "Synthesizer.vcxproj", "{588BA599-7AEA-3FD1-801D-E28E69BC40D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.Debug|x64.ActiveCfg = Debug|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.Debug|x64.Build.0 = Debug|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.Release|x64.ActiveCfg = Release|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.Release|x64.Build.0 = Release|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{588BA599-7AEA-3FD1-801D-E28E69BC40D0}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E2DC0D3-E91B-4ED2-96F2-55BF48ED68BF}
+	EndGlobalSection
+EndGlobal

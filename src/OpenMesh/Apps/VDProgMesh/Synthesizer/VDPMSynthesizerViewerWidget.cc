@@ -90,7 +90,7 @@ VDPMSynthesizerViewerWidget::VDPMSynthesizerViewerWidget(QWidget* _parent, const
   adaptive_mode_ = true;
 }
 
-VDPMSynthesizerViewerWidget::~VDPMSynthesizerViewerWidget()
+VDPMSynthesizerViewerWidget::~VDPMSynthesizerViewerWidget()//Destructor
 {
 
 }

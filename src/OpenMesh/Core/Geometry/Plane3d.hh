@@ -88,11 +88,11 @@ public:
     : d_(0)
   { }
 
-  Plane3d(const vector_type &_dir, const vector_type &_pnt)
+  Plane3d(const vector_type &_dir, const vector_type &_pnt)// pnt is the vector from the point toward the origin 
     : n_(_dir), d_(0)
   { 
     n_.normalize();
-    d_ = -dot(n_,_pnt); 
+    d_ = -dot(n_,_pnt); // d is the distance from the origin to the plain calculated by the dot product of the normal vector and the point
   }
 
   value_type signed_distance(const OpenMesh::Vec3f &_p)
@@ -102,7 +102,7 @@ public:
 
   // back compatibility
   value_type singed_distance(const OpenMesh::Vec3f &point)
-  { return signed_distance( point ); }
+  { return signed_distance( point ); } //signed distance represent the distance of the point to the plane
 
 public:
 
