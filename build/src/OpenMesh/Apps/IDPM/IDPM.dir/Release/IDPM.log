@@ -1,19 +1,111 @@
-﻿E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\ZERO_CHECK.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Core\OpenMeshCore.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Tools\OpenMeshTools.vcxproj' does not exist.
-  Automatic MOC for target IDPM
-  AutoGen: The info file "E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" is not readable
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: 命令“setlocal
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: cd "E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM"
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: E:
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: E:\cmake\bin\cmake.exe -E cmake_autogen "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/IDPM/CMakeFiles/IDPM_autogen.dir/AutogenInfo.json" Release
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmEnd
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmErrorLevel
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: exit /b %1
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :cmDone
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
-E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(128,5): error MSB3073: :VCEnd”已退出，代码为 1。
+﻿  Automatic MOC for target IDPM
+  mocs_compilation.cpp
+  OpenGLtest.cpp
+OpenGLtest.cpp(25): warning C4305: “初始化”: 从“double”到“float”截断
+OpenGLtest.cpp(94): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+OpenGLtest.cpp(260): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(263): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(266): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(269): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(282): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(283): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(292): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(294): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(296): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(299): warning C4305: “+=”: 从“double”到“float”截断
+OpenGLtest.cpp(305): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(307): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(309): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(312): warning C4305: “-=”: 从“double”到“float”截断
+OpenGLtest.cpp(323): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+OpenGLtest.cpp(326): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+  正在生成代码...
+OpenMeshCored.lib(BaseProperty.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BaseProperty.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(omstream.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(omstream.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(IOManager.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(IOManager.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OBJReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OBJReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OFFReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OFFReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PLYReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PLYReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(STLReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(STLReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OBJWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OBJWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OFFWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OFFWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(STLWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(STLWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PLYWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PLYWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(VTKWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(VTKWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(ArrayKernel.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(ArrayKernel.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(TriConnectivity.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(TriConnectivity.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BaseReader.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BaseReader.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BaseWriter.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BaseWriter.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BinaryHelper.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(BinaryHelper.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMFormat.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(OMFormat.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PropertyCreator.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PropertyCreator.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PolyConnectivity.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项: 值“2”不匹配值“0”(OpenGLtest.obj 中)
+OpenMeshCored.lib(PolyConnectivity.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MD_DynamicRelease”(OpenGLtest.obj 中)
+LINK : warning LNK4098: 默认库“MSVCRTD”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+OpenMeshCored.lib(BaseWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OMFormat.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(PropertyCreator.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(PolyConnectivity.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(VTKWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(ArrayKernel.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(TriConnectivity.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(BaseReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OFFWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(STLWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OMWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(PLYWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(PLYReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(STLReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OMReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OBJWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(omstream.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(IOManager.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OBJReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(OFFReader.obj) : error LNK2001: 无法解析的外部符号 __imp__invalid_parameter
+OpenMeshCored.lib(BaseWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OMFormat.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(PropertyCreator.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(PolyConnectivity.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(VTKWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(ArrayKernel.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(TriConnectivity.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(BaseReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OFFWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(STLWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OMWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(PLYWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(PLYReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(STLReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OMReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OBJWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(omstream.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(IOManager.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OBJReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OFFReader.obj) : error LNK2001: 无法解析的外部符号 __imp__CrtDbgReport
+OpenMeshCored.lib(OMReader.obj) : error LNK2019: 无法解析的外部符号 __imp__calloc_dbg，该符号在函数 "char * __cdecl std::_Maklocstr<char>(char const *,char *,struct _Cvtvec const &)" (??$_Maklocstr@D@std@@YAPEADPEBDPEADAEBU_Cvtvec@@@Z) 中被引用
+OpenMeshCored.lib(OMWriter.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc_dbg
+OpenMeshCored.lib(OMFormat.obj) : error LNK2001: 无法解析的外部符号 __imp__calloc_dbg
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Release\IDPM.exe : fatal error LNK1120: 3 个无法解析的外部命令

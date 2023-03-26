@@ -133,6 +133,8 @@ QGLViewerWidget::init(void)
   add_draw_mode("Solid Flat");
   a = add_draw_mode("Solid Smooth");
   a->setShortcut(QKeySequence(Key_S));
+  a = add_draw_mode("Toon Shading");
+  a->setShortcut(QKeySequence(Key_T));
   a->setChecked(true);
 
   slotDrawMode(a);
@@ -283,6 +285,13 @@ QGLViewerWidget::draw_scene(const std::string& _draw_mode)
     glEnable(GL_LIGHTING);
     glShadeModel(GL_SMOOTH);
     //glutSolidTeapot(0.5);
+  }
+
+  else if (_draw_mode == "Toon Shading")
+  {
+	  glEnable(GL_LIGHTING);
+	  glShadeModel(GL_FLAT);
+	  //glutSolidTeapot(0.5);
   }
 }
 

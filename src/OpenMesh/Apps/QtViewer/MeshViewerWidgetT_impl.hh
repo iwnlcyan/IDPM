@@ -557,6 +557,36 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
     glDisableClientState(GL_COLOR_ARRAY);
   }
 
+  else if (_draw_mode == "Toon Shading") // -------------------------------------
+  {
+  glEnableClientState(GL_VERTEX_ARRAY);
+  glVertexPointer(3, GL_FLOAT, 0, mesh_.points());
+
+  glEnableClientState(GL_NORMAL_ARRAY);
+  glNormalPointer(GL_FLOAT, 0, mesh_.vertex_normals());
+
+  if (mesh_.has_vertex_colors())
+  {
+	  glEnableClientState(GL_COLOR_ARRAY);
+	  glColorPointer(3, GL_UNSIGNED_BYTE, 0, mesh_.vertex_colors());
+  }
+
+  glBegin(GL_TRIANGLES);
+  for (; fIt != fEnd; ++fIt)
+  {
+	  fvIt = mesh_.cfv_iter(*fIt);
+	  glArrayElement(fvIt->idx());
+	  ++fvIt;
+	  glArrayElement(fvIt->idx());
+	  ++fvIt;
+	  glArrayElement(fvIt->idx());
+  }
+  glEnd();
+
+  glDisableClientState(GL_VERTEX_ARRAY);
+  glDisableClientState(GL_NORMAL_ARRAY);
+  glDisableClientState(GL_COLOR_ARRAY);
+  }
 
 }
 
@@ -653,6 +683,14 @@ MeshViewerWidgetT<M>::draw_scene(const std::string& _draw_mode)
     glShadeModel(GL_SMOOTH);
     draw_openmesh(_draw_mode);
     setDefaultMaterial();
+  }
+
+
+  else if (_draw_mode == "Toon Shading")
+  {
+	  glDisable(GL_LIGHTING);
+	  glShadeModel(GL_SMOOTH);
+	  draw_openmesh(_draw_mode);
   }
 
   if (show_vnormals_)

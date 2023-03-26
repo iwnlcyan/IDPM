@@ -1,17 +1,13 @@
-﻿E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\ZERO_CHECK.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Analyzer\Analyzer.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\DecimaterGui\DecimaterGui.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Dualizer\Dualizer.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Core\OpenMeshCore.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Tools\OpenMeshTools.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\ProgViewer\ProgViewer.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\QtViewer\QtViewer.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Smoothing\Smoothing.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\SubdividerGui\SubdividerGui.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Synthesizer.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineAdaptiveSubdivider\commandlineAdaptiveSubdivider.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\commandlineDecimater\commandlineDecimater.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\commandlineSubdivider\commandlineSubdivider.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\mconvert\mconvert.vcxproj' does not exist.
-E:\vs\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets(1879,5): warning : The referenced project 'E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\mkbalancedpm\mkbalancedpm.vcxproj' does not exist.
-CUSTOMBUILD : CMake error : Error processing file: E:/1KMD璇剧▼/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/fixbundle.win.cmake
+﻿  -- fixup_bundle
+  --   app='E:/1KMD/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/Smoothing.exe'
+  --   libs=''
+  --   dirs='E:/qt/5.13.1/msvc2017_64/bin'
+  --   ignoreItems=''
+CUSTOMBUILD : -- warning : *NOT* handled - directory/file does not exist...
+  CMake Error at E:/cmake/share/cmake-3.19/Modules/BundleUtilities.cmake:993 (message):
+CUSTOMBUILD : error : fixup_bundle: not a valid bundle
+  Call Stack (most recent call first):
+    fixbundle.win.cmake:21 (fixup_bundle)
+  
+  
+  -- fixup_bundle: done
