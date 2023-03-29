@@ -47,6 +47,8 @@
 //#  pragma warning(disable: 4267 4311)
 #endif
 
+#include <GL/GL.h>
+#include <glfw/glfw3.h>
 //
 #include <iostream>
 #include <fstream>
@@ -559,33 +561,36 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
 
   else if (_draw_mode == "Toon Shading") // -------------------------------------
   {
-  glEnableClientState(GL_VERTEX_ARRAY);
-  glVertexPointer(3, GL_FLOAT, 0, mesh_.points());
+ //   //LoadGLExtensions();
+ //
+	//GLuint* vboIds = NULL;
 
-  glEnableClientState(GL_NORMAL_ARRAY);
-  glNormalPointer(GL_FLOAT, 0, mesh_.vertex_normals());
-
-  if (mesh_.has_vertex_colors())
-  {
-	  glEnableClientState(GL_COLOR_ARRAY);
-	  glColorPointer(3, GL_UNSIGNED_BYTE, 0, mesh_.vertex_colors());
-  }
-
-  glBegin(GL_TRIANGLES);
-  for (; fIt != fEnd; ++fIt)
-  {
-	  fvIt = mesh_.cfv_iter(*fIt);
-	  glArrayElement(fvIt->idx());
-	  ++fvIt;
-	  glArrayElement(fvIt->idx());
-	  ++fvIt;
-	  glArrayElement(fvIt->idx());
-  }
-  glEnd();
-
-  glDisableClientState(GL_VERTEX_ARRAY);
-  glDisableClientState(GL_NORMAL_ARRAY);
-  glDisableClientState(GL_COLOR_ARRAY);
+ //   vboIds = new GLuint[1];
+ //   glGenBuffers(1, vboIds);
+ //
+ //   glEnableClientState(GL_VERTEX_ARRAY);
+ //   glEnableClientState(GL_COLOR_ARRAY);
+ //
+ //   // Set mesh data
+ //   glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);  // coordinates
+ //   glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.points()), mesh_.points(), GL_STATIC_DRAW);
+	//glVertexPointer(3, GL_FLOAT, 0, mesh_.points());
+ //
+	//if (mesh_.has_vertex_colors() && use_color_)
+	//{
+	//	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // color
+	//	glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.vertex_colors()), mesh_.vertex_colors(), GL_STATIC_DRAW);
+	//	glColorPointer(3, GL_UNSIGNED_BYTE, 0, mesh_.vertex_colors());
+	//}
+ //
+ //   // Draw mesh
+	//glDrawArrays(GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()));
+ //
+ //   glDisableClientState(GL_VERTEX_ARRAY);
+ //   glDisableClientState(GL_COLOR_ARRAY);
+ //
+ //   // Disable the VBO
+ //   glBindBuffer(GL_ARRAY_BUFFER, 0);
   }
 
 }

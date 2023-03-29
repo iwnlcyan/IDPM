@@ -128,7 +128,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/Debug/Synthesizer.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./Synthesizer.exe"
 if %errorlevel% neq 0 goto :cmEnd
@@ -140,8 +141,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\..\..\Core\Debug\OpenMeshCored.lib;..\..\..\Tools\Debug\OpenMeshToolsd.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;..\..\..\Tools\Debug\OpenMeshToolsd.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -201,7 +202,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/Release/Synthesizer.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./Synthesizer.exe"
 if %errorlevel% neq 0 goto :cmEnd
@@ -213,8 +215,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\..\..\Core\Release\OpenMeshCore.lib;..\..\..\Tools\Release\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Release\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\Release\OpenMeshCore.lib;..\..\..\Tools\Release\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Release\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -274,7 +276,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/MinSizeRel/Synthesizer.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./Synthesizer.exe"
 if %errorlevel% neq 0 goto :cmEnd
@@ -286,8 +289,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\..\..\Core\MinSizeRel\OpenMeshCore.lib;..\..\..\Tools\MinSizeRel\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;..\..\..\Tools\MinSizeRel\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -347,7 +350,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 E:\cmake\bin\cmake.exe -E copy_if_different "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/src/OpenMesh/Apps/VDProgMesh/Synthesizer/RelWithDebInfo/Synthesizer.exe" "E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/build/Build/./Synthesizer.exe"
 if %errorlevel% neq 0 goto :cmEnd
@@ -359,8 +363,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;..\..\..\Tools\RelWithDebInfo\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;..\..\..\Tools\RelWithDebInfo\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
