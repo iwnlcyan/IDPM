@@ -113,6 +113,8 @@ public:
 
   Mesh& mesh() { return mesh_; }
   const Mesh& mesh() const { return mesh_; }
+
+  GLuint* vboIds;
   
 protected:
   

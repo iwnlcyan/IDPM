@@ -49,6 +49,7 @@
 
 #include <GL/GL.h>
 #include <glfw/glfw3.h>
+//#include <GL/glextload.h>
 //
 #include <iostream>
 #include <fstream>
@@ -70,7 +71,6 @@ using namespace Qt;
 #endif
 
 //== IMPLEMENTATION ========================================================== 
-
 
 template <typename M>
 bool 
@@ -554,43 +554,41 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
       glColorPointer(3, GL_UNSIGNED_BYTE, 0, mesh_.vertex_colors());
     }
 
-    glDrawArrays( GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()) );
+    glDrawArrays(GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()) );
     glDisableClientState(GL_VERTEX_ARRAY);
     glDisableClientState(GL_COLOR_ARRAY);
   }
 
+
   else if (_draw_mode == "Toon Shading") // -------------------------------------
   {
- //   //LoadGLExtensions();
- //
-	//GLuint* vboIds = NULL;
-
- //   vboIds = new GLuint[1];
- //   glGenBuffers(1, vboIds);
- //
- //   glEnableClientState(GL_VERTEX_ARRAY);
- //   glEnableClientState(GL_COLOR_ARRAY);
- //
- //   // Set mesh data
- //   glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);  // coordinates
- //   glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.points()), mesh_.points(), GL_STATIC_DRAW);
-	//glVertexPointer(3, GL_FLOAT, 0, mesh_.points());
- //
+    glewInit();
+    vboIds = new GLuint[1];
+    glGenBuffers(1, vboIds);
+ 
+    glEnableClientState(GL_VERTEX_ARRAY);
+    //glEnableClientState(GL_COLOR_ARRAY);
+ 
+    // Set mesh data
+    glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);  // coordinates
+    glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.points()), mesh_.points(), GL_STATIC_DRAW);
+	glVertexPointer(3, GL_FLOAT, 0, 0);
+ 
 	//if (mesh_.has_vertex_colors() && use_color_)
 	//{
 	//	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // color
 	//	glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.vertex_colors()), mesh_.vertex_colors(), GL_STATIC_DRAW);
-	//	glColorPointer(3, GL_UNSIGNED_BYTE, 0, mesh_.vertex_colors());
+	//	glColorPointer(3, GL_UNSIGNED_BYTE, 0, 0);
 	//}
- //
- //   // Draw mesh
-	//glDrawArrays(GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()));
- //
- //   glDisableClientState(GL_VERTEX_ARRAY);
- //   glDisableClientState(GL_COLOR_ARRAY);
- //
- //   // Disable the VBO
- //   glBindBuffer(GL_ARRAY_BUFFER, 0);
+ 
+    // Draw mesh
+	glDrawArrays(GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()));
+ 
+    glDisableClientState(GL_VERTEX_ARRAY);
+    //glDisableClientState(GL_COLOR_ARRAY);
+ 
+    // Disable the VBO
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
   }
 
 }
@@ -694,6 +692,10 @@ MeshViewerWidgetT<M>::draw_scene(const std::string& _draw_mode)
   else if (_draw_mode == "Toon Shading")
   {
 	  glDisable(GL_LIGHTING);
+	  glEnable(GL_CULL_FACE);
+	  glCullFace(GL_BACK);
+	  glEnable(GL_DEPTH_TEST); // z-buffer test
+	  //glDepthFunc(GL_LESS);
 	  glShadeModel(GL_SMOOTH);
 	  draw_openmesh(_draw_mode);
   }

@@ -1,4 +1,5 @@
 ﻿  Automatic MOC for target IDPM
+  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Apps/IDPM/CMakeLists.txt
   mocs_compilation.cpp
   OpenGLtest.cpp
 OpenGLtest.cpp(25): warning C4305: “初始化”: 从“double”到“float”截断

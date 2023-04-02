@@ -131,10 +131,10 @@ QGLViewerWidget::init(void)
   a = add_draw_mode("Wireframe");
   a->setShortcut(QKeySequence(Key_W));
   add_draw_mode("Solid Flat");
-  a = add_draw_mode("Solid Smooth");
-  a->setShortcut(QKeySequence(Key_S));
   a = add_draw_mode("Toon Shading");
   a->setShortcut(QKeySequence(Key_T));
+  a = add_draw_mode("Solid Smooth");
+  a->setShortcut(QKeySequence(Key_S));
   a->setChecked(true);
 
   slotDrawMode(a);
