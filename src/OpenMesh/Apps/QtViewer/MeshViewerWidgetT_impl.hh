@@ -563,17 +563,23 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
   else if (_draw_mode == "Toon Shading") // -------------------------------------
   {
     glewInit();
+	GLuint* vboIds;
     vboIds = new GLuint[1];
-    glGenBuffers(1, vboIds);
+    glGenBuffers(2, vboIds);
  
     glEnableClientState(GL_VERTEX_ARRAY);
     //glEnableClientState(GL_COLOR_ARRAY);
- 
+    glEnableClientState(GL_NORMAL_ARRAY);
+
     // Set mesh data
     glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);  // coordinates
     glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.points()), mesh_.points(), GL_STATIC_DRAW);
 	glVertexPointer(3, GL_FLOAT, 0, 0);
  
+	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // normals
+	glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.vertex_normals()), mesh_.vertex_normals(), GL_STATIC_DRAW);
+	glNormalPointer(GL_FLOAT, 0, 0);
+
 	//if (mesh_.has_vertex_colors() && use_color_)
 	//{
 	//	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // color
@@ -582,11 +588,12 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
 	//}
  
     // Draw mesh
-	glDrawArrays(GL_POINTS, 0, static_cast<GLsizei>(mesh_.n_vertices()));
+	glDrawArrays(GL_TRIANGLES, 0, static_cast<GLsizei>(mesh_.n_vertices()));
  
     glDisableClientState(GL_VERTEX_ARRAY);
     //glDisableClientState(GL_COLOR_ARRAY);
- 
+	glDisableClientState(GL_NORMAL_ARRAY);
+
     // Disable the VBO
     glBindBuffer(GL_ARRAY_BUFFER, 0);
   }

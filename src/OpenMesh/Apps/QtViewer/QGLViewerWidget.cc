@@ -92,6 +92,7 @@ QGLViewerWidget::QGLViewerWidget( QWidget* _parent ) : QGLWidget( _parent )
 QGLViewerWidget::QGLViewerWidget( QWidget* _parent ) : QOpenGLWidget( _parent )
 #endif
 {    
+  //glewInit();
   init();
 }
 
@@ -290,8 +291,9 @@ QGLViewerWidget::draw_scene(const std::string& _draw_mode)
   else if (_draw_mode == "Toon Shading")
   {
 	  glEnable(GL_LIGHTING);
-	  glShadeModel(GL_FLAT);
-	  //glutSolidTeapot(0.5);
+	  glEnable(GL_DEPTH_TEST); // z-buffer test
+	  //glDepthFunc(GL_LESS);
+	  glShadeModel(GL_SMOOTH);
   }
 }
 
