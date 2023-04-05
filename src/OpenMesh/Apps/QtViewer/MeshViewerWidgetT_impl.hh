@@ -563,39 +563,32 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
   else if (_draw_mode == "Toon Shading") // -------------------------------------
   {
     glewInit();
-	GLuint* vboIds;
-    vboIds = new GLuint[1];
-    glGenBuffers(2, vboIds);
- 
-    glEnableClientState(GL_VERTEX_ARRAY);
-    //glEnableClientState(GL_COLOR_ARRAY);
-    glEnableClientState(GL_NORMAL_ARRAY);
 
-    // Set mesh data
-    glBindBuffer(GL_ARRAY_BUFFER, vboIds[0]);  // coordinates
-    glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.points()), mesh_.points(), GL_STATIC_DRAW);
-	glVertexPointer(3, GL_FLOAT, 0, 0);
- 
-	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // normals
-	glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.vertex_normals()), mesh_.vertex_normals(), GL_STATIC_DRAW);
-	glNormalPointer(GL_FLOAT, 0, 0);
+	float quadVertices[] = { // vertex attributes for a quad that fills the entire screen in Normalized Device Coordinates.
+	// positions        // texture Coords
+	-1.0f,  1.0f, 0.0f, 0.0f, 1.0f,
+	-1.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+	 1.0f,  1.0f, 0.0f, 1.0f, 1.0f,
+	 1.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+	};
 
-	//if (mesh_.has_vertex_colors() && use_color_)
-	//{
-	//	glBindBuffer(GL_ARRAY_BUFFER, vboIds[1]);  // color
-	//	glBufferData(GL_ARRAY_BUFFER, sizeof(mesh_.vertex_colors()), mesh_.vertex_colors(), GL_STATIC_DRAW);
-	//	glColorPointer(3, GL_UNSIGNED_BYTE, 0, 0);
-	//}
- 
-    // Draw mesh
-	glDrawArrays(GL_TRIANGLES, 0, static_cast<GLsizei>(mesh_.n_vertices()));
- 
-    glDisableClientState(GL_VERTEX_ARRAY);
-    //glDisableClientState(GL_COLOR_ARRAY);
-	glDisableClientState(GL_NORMAL_ARRAY);
 
-    // Disable the VBO
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+	GLuint quadVAO, quadVBO;
+	glGenVertexArrays(1, &quadVAO);
+	glGenBuffers(1, &quadVBO);
+	glBindVertexArray(quadVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, quadVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(quadVertices), &quadVertices, GL_STATIC_DRAW);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	glBindVertexArray(0);
+
+	glBindVertexArray(quadVAO);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+
+	glBindVertexArray(0);
   }
 
 }
