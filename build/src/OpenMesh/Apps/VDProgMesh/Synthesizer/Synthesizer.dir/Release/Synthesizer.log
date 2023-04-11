@@ -3,15 +3,15 @@
   drawNPR.cpp
 E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Headers/shader.h(58): warning C4101: “e”: 未引用的局部变量
 E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Headers/mesh.h(86): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
-drawNPR.cpp(290): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-drawNPR.cpp(302): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(289): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(301): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(752): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
 drawNPR.cpp(753): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-drawNPR.cpp(754): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(756): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
 drawNPR.cpp(757): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-drawNPR.cpp(758): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(759): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
 drawNPR.cpp(760): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-drawNPR.cpp(761): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-drawNPR.cpp(771): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+drawNPR.cpp(770): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   mocs_compilation.cpp
   QGLViewerWidget.cc
   vdpmsynthesizer.cc
@@ -20,12 +20,4 @@ E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\
 E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Headers/shader.h(58): warning C4101: “e”: 未引用的局部变量
   stb_image.cpp
   正在生成代码...
-vdpmsynthesizer.obj : error LNK2005: "void __cdecl RenderText(class Shader &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<char,struct Character,struct std::less<char>,class std::allocator<struct std::pair<char const ,struct Character> > > &,unsigned int &,unsigned int &,float,float,float,struct glm::tvec3<float,0>)" (?RenderText@@YAXAEAVShader@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$map@DUCharacter@@U?$less@D@std@@V?$allocator@U?$pair@$$CBDUCharacter@@@std@@@3@@3@AEAI3MMMU?$tvec3@M$0A@@glm@@@Z) 已经在 drawNPR.obj 中定义
-vdpmsynthesizer.obj : error LNK2005: "int __cdecl SetUpFreeType(class std::map<char,struct Character,struct std::less<char>,class std::allocator<struct std::pair<char const ,struct Character> > > *)" (?SetUpFreeType@@YAHPEAV?$map@DUCharacter@@U?$less@D@std@@V?$allocator@U?$pair@$$CBDUCharacter@@@std@@@3@@std@@@Z) 已经在 drawNPR.obj 中定义
-vdpmsynthesizer.obj : error LNK2005: "unsigned int __cdecl TextureFromFile(char const *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (?TextureFromFile@@YAIPEBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z) 已经在 drawNPR.obj 中定义
-vdpmsynthesizer.obj : error LNK2005: "char const * const logl_root" (?logl_root@@3PEBDEB) 已经在 drawNPR.obj 中定义
-VDPMSynthesizerViewerWidget.obj : error LNK2005: "void __cdecl RenderText(class Shader &,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::map<char,struct Character,struct std::less<char>,class std::allocator<struct std::pair<char const ,struct Character> > > &,unsigned int &,unsigned int &,float,float,float,struct glm::tvec3<float,0>)" (?RenderText@@YAXAEAVShader@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$map@DUCharacter@@U?$less@D@std@@V?$allocator@U?$pair@$$CBDUCharacter@@@std@@@3@@3@AEAI3MMMU?$tvec3@M$0A@@glm@@@Z) 已经在 drawNPR.obj 中定义
-VDPMSynthesizerViewerWidget.obj : error LNK2005: "int __cdecl SetUpFreeType(class std::map<char,struct Character,struct std::less<char>,class std::allocator<struct std::pair<char const ,struct Character> > > *)" (?SetUpFreeType@@YAHPEAV?$map@DUCharacter@@U?$less@D@std@@V?$allocator@U?$pair@$$CBDUCharacter@@@std@@@3@@std@@@Z) 已经在 drawNPR.obj 中定义
-VDPMSynthesizerViewerWidget.obj : error LNK2005: "unsigned int __cdecl TextureFromFile(char const *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (?TextureFromFile@@YAIPEBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z) 已经在 drawNPR.obj 中定义
-VDPMSynthesizerViewerWidget.obj : error LNK2005: "char const * const logl_root" (?logl_root@@3PEBDEB) 已经在 drawNPR.obj 中定义
-E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Release\Synthesizer.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
+  Synthesizer.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Release\Synthesizer.exe

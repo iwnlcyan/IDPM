@@ -27,7 +27,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processMovement(GLFWwindow* window, CameraInfo* cameraInfo, TimingInfo* timingInfo);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
-void configureFBO(WindoS* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
+void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
 
 
 
