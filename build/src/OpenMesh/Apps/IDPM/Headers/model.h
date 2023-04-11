@@ -11,7 +11,6 @@
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
 
-#define STB_IMAGE_IMPLEMENTATION
 #include "Headers/stb_image.h"
 #include "Headers/mesh.h"
 #include "Headers/shader.h"
