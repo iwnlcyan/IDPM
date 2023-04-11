@@ -29,9 +29,6 @@
     <ClInclude Include="Headers\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\drawNPR.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Headers\filesystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>

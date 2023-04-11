@@ -187,7 +187,7 @@ public:
 	}
 };
 
-class Window
+class WindowS
 {
 private:	
 	GLFWwindow* glfwWindow;
@@ -206,7 +206,7 @@ private:
 public:
 	std::map<GLchar, Character> screenText;
 
-	Window()
+	WindowS()
 	{
 		glfwWindow = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Shaders", NULL, NULL);
 		glfwSetWindowUserPointer(glfwWindow, this);
@@ -219,7 +219,7 @@ public:
 		timingInfo = new TimingInfo();
 		lightingInfo = new LightingInfo();
 	}
-	~Window()
+	~WindowS()
 	{
 		delete cameraInfo;
 		delete timingInfo;

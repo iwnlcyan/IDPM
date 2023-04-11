@@ -473,7 +473,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClInclude Include="drawNPR.h" />
     <ClInclude Include="Headers\camera.h" />
-    <ClInclude Include="Headers\drawNPR.h" />
     <ClInclude Include="Headers\filesystem.h" />
     <ClInclude Include="Headers\light.h" />
     <ClInclude Include="Headers\mesh.h" />

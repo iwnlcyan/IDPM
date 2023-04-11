@@ -81,6 +81,22 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\glm;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\include;E:\assimp-5.0.0\assimp-5.0.0\include;E:\assimp-5.0.0\assimp-5.0.0\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\objs\x64\Debug;E:\assimp-5.0.0\assimp-5.0.0\build\code\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <IncludePath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\glm;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\include;E:\assimp-5.0.0\assimp-5.0.0\include;E:\assimp-5.0.0\assimp-5.0.0\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\objs\x64\Debug;E:\assimp-5.0.0\assimp-5.0.0\build\code\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\glm;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\include;E:\assimp-5.0.0\assimp-5.0.0\include;E:\assimp-5.0.0\assimp-5.0.0\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\objs\x64\Debug;E:\assimp-5.0.0\assimp-5.0.0\build\code\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <IncludePath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\glm;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\include;E:\assimp-5.0.0\assimp-5.0.0\include;E:\assimp-5.0.0\assimp-5.0.0\build\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\freetype-2.10.0\objs\x64\Debug;E:\assimp-5.0.0\assimp-5.0.0\build\code\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Synthesizer_autogen\include_Debug;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\VDProgMesh\Synthesizer\..\..\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\VDProgMesh\Synthesizer;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Core\..\..;E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Tools\..\..;E:\anaconda\Library\include\qt;E:\anaconda\Library\include\qt\QtCore;E:\anaconda\Library\.\mkspecs\win32-msvc;E:\anaconda\Library\include\qt\QtWidgets;E:\anaconda\Library\include\qt\QtGui;E:\anaconda\Library\include\qt\QtANGLE;E:\anaconda\Library\include\qt\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -141,7 +157,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;..\..\..\Tools\Debug\OpenMeshToolsd.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;freetype.lib;glew32s.lib;glew32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;..\..\..\Tools\Debug\OpenMeshToolsd.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Debug\OpenMeshCored.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -215,7 +231,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\Release\OpenMeshCore.lib;..\..\..\Tools\Release\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Release\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;freetype.lib;glew32s.lib;glew32.lib;..\..\..\Core\Release\OpenMeshCore.lib;..\..\..\Tools\Release\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\Release\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -289,7 +305,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;..\..\..\Tools\MinSizeRel\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;freetype.lib;glew32s.lib;glew32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;..\..\..\Tools\MinSizeRel\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\MinSizeRel\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -363,7 +379,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>glew32s.lib;opengl32.lib;glfw3.lib;glew32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;..\..\..\Tools\RelWithDebInfo\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc141-mtd.lib;freetype.lib;glew32s.lib;glew32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;..\..\..\Tools\RelWithDebInfo\OpenMeshTools.lib;E:\anaconda\Library\lib\Qt5OpenGL.lib;E:\anaconda\Library\lib\Qt5Widgets.lib;E:\anaconda\Library\lib\Qt5Gui.lib;opengl32.lib;glu32.lib;..\..\..\Core\RelWithDebInfo\OpenMeshCore.lib;E:\anaconda\Library\lib\Qt5Core.lib;E:\anaconda\Library\lib\qtmain.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies);%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>E:\glfw\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -434,10 +450,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="drawNPR.cpp" />
     <ClCompile Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\VDProgMesh\Synthesizer\Synthesizer_autogen\mocs_compilation.cpp" />
     <ClCompile Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\QtViewer\QGLViewerWidget.cc" />
     <ClCompile Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\VDProgMesh\Synthesizer\vdpmsynthesizer.cc" />
     <ClCompile Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\VDProgMesh\Synthesizer\VDPMSynthesizerViewerWidget.cc" />
+    <ClCompile Include="stb_image.cpp" />
+    <ClInclude Include="..\..\IDPM\Headers\drawNPR.h" />
     <ClInclude Include="E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\VDProgMesh\Synthesizer\VDPMSynthesizerViewerWidget.hh" />
   </ItemGroup>
   <ItemGroup>

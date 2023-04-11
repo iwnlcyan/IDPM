@@ -27,7 +27,7 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processMovement(GLFWwindow* window, CameraInfo* cameraInfo, TimingInfo* timingInfo);
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
-void configureFBO(Window* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
+void configureFBO(WindoS* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
 
 
 
@@ -35,7 +35,7 @@ int drawNPR()
 {
 	glfwInit();
 
-	Window* window = new Window();
+	WindowS* window = new WindowS();
 
 	// tell GLFW to use OpenGL 3.3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -659,7 +659,7 @@ void processMovement(GLFWwindow* window, CameraInfo* cameraInfo, TimingInfo* tim
 //void processInput(GLFWwindow* window, Model** modelToRender)
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	Window* myWindow = (Window*)glfwGetWindowUserPointer(window);
+	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
 
 	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
 	{
@@ -756,7 +756,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 // -------------------------------------------------------
 void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 {
-	Window* myWindow = (Window*)glfwGetWindowUserPointer(window);
+	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
 
 	if (myWindow->getCameraInfo()->getLastX() < 0 || myWindow->getCameraInfo()->getLastY() < 0)
 	{
@@ -777,13 +777,13 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 // ----------------------------------------------------------------------
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 {
-	Window* myWindow = (Window*)glfwGetWindowUserPointer(window);
+	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
 	myWindow->getCameraInfo()->getCamera()->ProcessMouseScroll(yoffset);
 }
 
 // Bind textures and buffers to frame buffer object
 // ----------------------------------------------------------------------
-void configureFBO(Window* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil) {
+void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil) {
 
 	glGenFramebuffers(1, FBO);
 	glBindFramebuffer(GL_FRAMEBUFFER, *FBO);

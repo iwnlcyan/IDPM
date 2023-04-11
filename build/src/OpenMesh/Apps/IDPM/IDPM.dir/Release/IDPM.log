@@ -6,15 +6,15 @@ e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\
 e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/filesystem.h(25): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   E:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdlib.h(1191): note: 参见“getenv”的声明
 e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/mesh.h(86): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(299): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(311): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(298): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(310): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(761): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
 e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(762): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(763): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(765): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
 e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(766): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(767): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(768): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
 e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(769): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(770): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(780): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\apps\idpm\Headers/drawNPR.h(779): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   stb_image.cpp
   正在生成代码...
   IDPM.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\IDPM\Release\IDPM.exe
