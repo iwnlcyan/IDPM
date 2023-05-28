@@ -87,12 +87,23 @@ VDPMSynthesizerViewerWidget::VDPMSynthesizerViewerWidget(QWidget* _parent, const
     n_details_(0)
 
 {
-  adaptive_mode_ = true;
+	numSamples = 4;
+	activeShaderID = 0;
+	normalsDisplaySetting = false;
+	activeModelIndex = 0;
+
+	cameraInfo = new CameraInfo();
+	timingInfo = new TimingInfo();
+	lightingInfo = new LightingInfo();
+
+    adaptive_mode_ = true;
 }
 
 VDPMSynthesizerViewerWidget::~VDPMSynthesizerViewerWidget()//Destructor
 {
-
+	delete cameraInfo;
+	delete timingInfo;
+	delete lightingInfo;
 }
 
 void

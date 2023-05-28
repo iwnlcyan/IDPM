@@ -98,21 +98,245 @@ typedef MeshViewerWidgetT<VDPMMesh>		MeshViewerWidget;
 //== CLASS DEFINITION =========================================================
 
 
+  class CameraInfo
+  {
+  private:
+	  Camera* camera;
+	  float lastX;
+	  float lastY;
+
+  public:
+	  CameraInfo()
+	  {
+		  camera = new Camera(0.0f, 5.0f, 10.0f, 0.0f, 1.0f, 0.0f, -90.0f, -20.0f);
+		  lastX = -1;
+		  lastY = -1;
+	  }
+	  ~CameraInfo()
+	  {
+		  delete camera;
+	  }
+
+	  Camera* getCamera()
+	  {
+		  return camera;
+	  }
+	  float getLastX()
+	  {
+		  return lastX;
+	  }
+	  float getLastY()
+	  {
+		  return lastY;
+	  }
+
+	  void setLastX(float x)
+	  {
+		  lastX = x;
+	  }
+	  void setLastY(float y)
+	  {
+		  lastY = y;
+	  }
+  };
+
+
+  class TimingInfo
+  {
+  private:
+	  float currentFrame;
+	  float deltaTime;
+	  float lastFrame;
+	  bool rotationPaused;
+	  float rotationTime;
+
+  public:
+	  TimingInfo()
+	  {
+		  currentFrame = 0.0f;
+		  deltaTime = 0.0f;
+		  lastFrame = 0.0f;
+		  rotationPaused = true;
+		  rotationTime = 0.0f;
+	  }
+	  ~TimingInfo() { }
+
+	  float getCurrentFrame()
+	  {
+		  return currentFrame;
+	  }
+	  float getDeltaTime()
+	  {
+		  return deltaTime;
+	  }
+	  float getLastFrame()
+	  {
+		  return lastFrame;
+	  }
+	  bool isRotationPaused()
+	  {
+		  return rotationPaused;
+	  }
+	  float getRotationTime()
+	  {
+		  return rotationTime;
+	  }
+
+	  void setCurrentFrame(float frame)
+	  {
+		  currentFrame = frame;
+	  }
+	  void setDeltaTime()
+	  {
+		  deltaTime = currentFrame - lastFrame;
+	  }
+	  void setLastFrame(float frame)
+	  {
+		  lastFrame = frame;
+	  }
+	  void setRotationPaused(bool pause)
+	  {
+		  rotationPaused = pause;
+	  }
+	  void setRotationTime(float time)
+	  {
+		  rotationTime = time;
+	  }
+  };
+
+
+  class LightingInfo
+  {
+  private:
+	  const glm::vec3 LIGHTPOS = glm::vec3(3.0f, 4.0f, 2.64575f);
+	  float currentLightSourcePosition; // along the light's path circumference
+	  float lightSourceVelocity;
+	  float lightPathRadius;
+	  float directionFlip;
+	  bool lightPaused;
+
+  public:
+	  LightingInfo()
+	  {
+		  currentLightSourcePosition = 1.69612f;
+		  lightSourceVelocity = 2.0f;
+		  lightPathRadius = 4.0f;
+		  directionFlip = 1.0f;
+		  lightPaused = true;
+	  }
+	  ~LightingInfo() { }
+
+	  glm::vec3 getLIGHTPOS()
+	  {
+		  return LIGHTPOS;
+	  }
+	  float getCurrentLightSourcePosition() // gets position of light at the moment it was paused
+	  {
+		  return currentLightSourcePosition;
+	  }
+	  float getLightSourceVelocity()
+	  {
+		  return lightSourceVelocity;
+	  }
+	  float getLightPathRadius()
+	  {
+		  return lightPathRadius;
+	  }
+	  float getDirectionFlip()
+	  {
+		  return directionFlip;
+	  }
+	  bool isLightPaused()
+	  {
+		  return lightPaused;
+	  }
+
+	  void setCurrentLightSourcePosition(float pos)
+	  {
+		  currentLightSourcePosition = pos;
+	  }
+	  void setLightSourceVelocity(float velocity)
+	  {
+		  lightSourceVelocity = velocity;
+	  }
+	  void setLightPathRadius(float radius)
+	  {
+		  lightPathRadius = radius;
+	  }
+	  void setDirectionFlip(float flipValue)
+	  {
+		  directionFlip = flipValue;
+	  }
+	  void setLightPaused(bool paused)
+	  {
+		  lightPaused = paused;
+	  }
+  };
+
+
 class VDPMSynthesizerViewerWidget : public MeshViewerWidget
 {
 public:
 
   typedef MeshViewerWidget Base;
+  std::map<GLchar, Character> screenText;
+  bool VDPMSynthesizerViewerWidgetCloseFlag;
 
 public:
 
-  VDPMSynthesizerViewerWidget(QWidget* _parent=0, const char* _name=0);
+	VDPMSynthesizerViewerWidget(QWidget* _parent = 0, const char* _name = 0);
 
-  ~VDPMSynthesizerViewerWidget();
+	~VDPMSynthesizerViewerWidget();
 
   /// open view-dependent progressive mesh
   void open_vd_prog_mesh(const char* _filename);
 
+  //VDPMSynthesizerViewerWidget* getVDPMSynthesizerViewerWidget()
+ 
+  CameraInfo* getCameraInfo()
+  {
+	  return cameraInfo;
+  }
+
+  TimingInfo* getTimingInfo()
+  {
+	  return timingInfo;
+  }
+
+  LightingInfo* getLightingInfo()
+  {
+	  return lightingInfo;
+  }
+
+  Model* getModelToRender()
+  {
+	  return modelsList[activeModelIndex];
+  }
+
+  int getActiveShaderID()
+  {
+	  return activeShaderID;
+  }
+
+  bool getNormalsDisplaySetting()
+  {
+	  return normalsDisplaySetting;
+  }
+
+  int getWidth()
+  {
+	  return this -> width();
+  }
+
+  int getHeight()
+  {
+	  return this -> height();
+  }
+
+  int getNumSamples()
+  {
+	  return numSamples;
+  }
 
 private:
 
@@ -122,11 +346,20 @@ private:
   ViewingParameters   viewing_parameters_;
   float               kappa_square_;
   bool                adaptive_mode_;
+  int                 activeShaderID;
+  int                 numSamples;
 
   unsigned int        n_base_vertices_;
   unsigned int        n_base_edges_;
   unsigned int        n_base_faces_;
   unsigned int        n_details_;
+
+  CameraInfo* cameraInfo;
+  TimingInfo* timingInfo;
+  LightingInfo* lightingInfo;
+  bool normalsDisplaySetting;
+  std::vector<Model*> modelsList;
+  int activeModelIndex;
 
     
 private:
@@ -155,6 +388,8 @@ public:
 
   void adaptive_refinement();	
 
+  int drawNPR(VDPMSynthesizerViewerWidget* w);
+
   bool qrefine(VHierarchyNodeHandle _node_handle);		
 
   void force_vsplit(VHierarchyNodeHandle _node_handle);
@@ -174,6 +409,7 @@ public:
   void init_vfront();
  
 };
+
 
 
 //=============================================================================

@@ -11,7 +11,7 @@
 #include <vector>
 #include <string>
 
-#include "Headers/window.h"
+//#include "Headers/window.h"
 #include "Headers/render_text.h"
 #include "Headers/shader.h"
 #include "Headers/filesystem.h"
@@ -20,42 +20,34 @@
 
 #include "Headers/drawNPR.h"
 
-int drawNPR()
-{
-	glfwInit();
+#include <iostream>
 
-	WindowS* window = new WindowS();
-
-	// tell GLFW to use OpenGL 3.3
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	glfwWindowHint(GLFW_SAMPLES, window->getNumSamples());
-
-#ifdef __APPLE__
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+#include <QString>
+#include <QApplication>
+#include <OpenMesh/Apps/QtViewer/QGLViewerWidget.hh>
+#include <OpenMesh/Tools/Utils/Timer.hh>
+#if QT_VERSION_MAJOR > 5
+#include <QOpenGLContext>
 #endif
+
+#include "VDPMSynthesizerViewerWidget.hh"
+
+void configureFBO(VDPMSynthesizerViewerWidget* w, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
+
+int VDPMSynthesizerViewerWidget::
+drawNPR(VDPMSynthesizerViewerWidget* w)
+{
 
 	// create window
 	//GLFWwindow* window = glfwCreateWindow(instance->getWidth(), instance->getHeight(), "Shaders", NULL, NULL);
-	if (window->getGLFWWindow() == NULL)
+	if (w->context() == NULL)
 	{
-		std::cout << "Failed to create GLFW window" << std::endl;
-		glfwTerminate();
+		std::cout << "Failed to find context" << std::endl;
 		return -1;
 	}
-	glfwMakeContextCurrent(window->getGLFWWindow());
-	glewInit();
-	glfwSetFramebufferSizeCallback(window->getGLFWWindow(), framebuffer_size_callback);
-	glfwSetCursorPosCallback(window->getGLFWWindow(), mouse_callback);
-	glfwSetScrollCallback(window->getGLFWWindow(), scroll_callback);
-	glfwSetKeyCallback(window->getGLFWWindow(), key_callback);
+	makeCurrent();
+	//initializeGL();
 
-	// tell GLFW to capture our mouse
-	glfwSetInputMode(window->getGLFWWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
-	glfwSetInputMode(window->getGLFWWindow(), GLFW_STICKY_KEYS, GLFW_TRUE);
 
 	// initialize glad: load all OpenGL function pointers
 	//if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -95,9 +87,9 @@ int drawNPR()
 	Model bunnyModel(FileSystem::getPath("Models/StanfordBunny.obj"));
 	//Model ourModel(FileSystem::getPath("Models/Ravenors-Reading Corner/Ravenors-Reading Corner.obj"));
 
-	window->addModel(&teapotModel);
-	window->addModel(&backpackModel);
-	window->addModel(&bunnyModel);
+	//w->addModel(&teapotModel);
+	//w->addModel(&backpackModel);
+	//w->addModel(&bunnyModel);
 
 	float lightSourceVertices[] = { // cube
 		-0.5f, -0.5f, -0.5f,
@@ -208,7 +200,7 @@ int drawNPR()
 	renderTargetsMSAA.push_back(&normalTextureMSAA);
 	glGenTextures(1, &depthTextureMSAA);
 	renderTargetsMSAA.push_back(&depthTextureMSAA);
-	configureFBO(window, &goochFBO, &renderTargetsMSAA, true, false, true);
+	configureFBO(w, &goochFBO, &renderTargetsMSAA, true, false, true);
 
 	GLuint intermediateFBO, imageTexture, normalTexture, depthTexture;
 	vector<GLuint*> intermediateRenderTargets;
@@ -218,7 +210,7 @@ int drawNPR()
 	intermediateRenderTargets.push_back(&normalTexture);
 	glGenTextures(1, &depthTexture);
 	intermediateRenderTargets.push_back(&depthTexture);
-	configureFBO(window, &intermediateFBO, &intermediateRenderTargets, false, false, false);
+	configureFBO(w, &intermediateFBO, &intermediateRenderTargets, false, false, false);
 
 	GLuint hatchingFBO, hatching0, hatching1, hatching2, hatching3, hatching4, hatching5;
 	vector<GLuint*> hatchingRenderTargets; // G buffers
@@ -234,7 +226,7 @@ int drawNPR()
 	hatchingRenderTargets.push_back(&hatching4);
 	glGenTextures(1, &hatching5);
 	hatchingRenderTargets.push_back(&hatching5);
-	configureFBO(window, &hatchingFBO, &hatchingRenderTargets, false, true, false);
+	configureFBO(w, &hatchingFBO, &hatchingRenderTargets, false, true, false);
 
 
 	// assign render targets for goochFBO and intermediateFBO
@@ -250,7 +242,7 @@ int drawNPR()
 
 	// set up FreeType
 	// -----------------------------------
-	int returnVal = SetUpFreeType(&(window->screenText));
+	int returnVal = SetUpFreeType(&(w->screenText));
 	if (returnVal != 0)
 	{
 		return returnVal;
@@ -267,7 +259,7 @@ int drawNPR()
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
 
-	glm::mat4 textProjection = glm::ortho(0.0f, static_cast<float>(window->getWidth()), 0.0f, static_cast<float>(window->getHeight()));
+	glm::mat4 textProjection = glm::ortho(0.0f, static_cast<float>(w->getWidth()), 0.0f, static_cast<float>(w->getHeight()));
 
 
 	// shader configuration
@@ -289,21 +281,21 @@ int drawNPR()
 	float fpsTimer = glfwGetTime();
 	int numFrames = 0, numFramesToDisplay = 0;
 
-	glm::vec3 lightPos = window->getLightingInfo()->getLIGHTPOS();
-	float lightSourceFrame = window->getLightingInfo()->getCurrentLightSourcePosition();
+	glm::vec3 lightPos = w->getLightingInfo()->getLIGHTPOS();
+	float lightSourceFrame = w->getLightingInfo()->getCurrentLightSourcePosition();
 
 	// render loop
 	// -----------------------------------
-	while (!glfwWindowShouldClose(window->getGLFWWindow()))
+	while (!VDPMSynthesizerViewerWidgetCloseFlag)
 	{
 		// per-frame time logic
 		// --------------------
-		window->getTimingInfo()->setCurrentFrame(glfwGetTime());
-		window->getTimingInfo()->setDeltaTime();
-		window->getTimingInfo()->setLastFrame(window->getTimingInfo()->getCurrentFrame());
+		w->getTimingInfo()->setCurrentFrame(glfwGetTime());
+		w->getTimingInfo()->setDeltaTime();
+		w->getTimingInfo()->setLastFrame(w->getTimingInfo()->getCurrentFrame());
 
 		//processInput(window, &modelToRender);
-		processMovement(window->getGLFWWindow(), window->getCameraInfo(), window->getTimingInfo());
+		//processMovement(w, w->getCameraInfo(), w->getTimingInfo());
 
 		// render
 		//glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -312,7 +304,7 @@ int drawNPR()
 
 		// set the view matrix in the uniform block - we only have to do this once per loop iteration.
 		// -----------------------------------
-		glm::mat4 view = (window->getCameraInfo()->getCamera())->GetViewMatrix();
+		glm::mat4 view = (w->getCameraInfo()->getCamera())->GetViewMatrix();
 		glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
 		glBufferSubData(GL_UNIFORM_BUFFER, sizeof(glm::mat4), sizeof(glm::mat4), glm::value_ptr(view));
 		glBindBuffer(GL_UNIFORM_BUFFER, 0);
@@ -324,35 +316,35 @@ int drawNPR()
 		modelMatrix = glm::scale(modelMatrix, glm::vec3(0.8f));
 		modelMatrix = glm::translate(modelMatrix, glm::vec3(0.0f, 2.0f, 0.0f));
 
-		if (!window->getTimingInfo()->isRotationPaused())
+		if (!w->getTimingInfo()->isRotationPaused())
 		{
-			window->getTimingInfo()->setRotationTime(window->getTimingInfo()->getRotationTime() + window->getTimingInfo()->getDeltaTime() * window->getLightingInfo()->getDirectionFlip());
+			w->getTimingInfo()->setRotationTime(w->getTimingInfo()->getRotationTime() + w->getTimingInfo()->getDeltaTime() * w->getLightingInfo()->getDirectionFlip());
 		}
 
-		if (window->getActiveShaderID() == 2)
+		if (w->getActiveShaderID() == 2)
 		{
-			modelMatrix = glm::rotate(modelMatrix, window->getTimingInfo()->getRotationTime(), glm::vec3(0.0f, 1.0f, 0.0f));
+			modelMatrix = glm::rotate(modelMatrix, w->getTimingInfo()->getRotationTime(), glm::vec3(0.0f, 1.0f, 0.0f));
 		}
 		else
 		{
-			window->getTimingInfo()->setRotationTime(0.0f);
+			w->getTimingInfo()->setRotationTime(0.0f);
 		}
 
 		glm::mat3 normalMatrix = glm::mat3(transpose(inverse(modelMatrix)));
 
 		// store the projection matrix
 		// -----------------------------------
-		glm::mat4 projection = glm::perspective(glm::radians((window->getCameraInfo()->getCamera())->Zoom), (float)window->getWidth() / (float)window->getHeight(), 0.1f, 100.0f);
+		glm::mat4 projection = glm::perspective(glm::radians((w->getCameraInfo()->getCamera())->Zoom), (float)w->getWidth() / (float)w->getHeight(), 0.1f, 100.0f);
 		glBindBuffer(GL_UNIFORM_BUFFER, uboMatrices);
 		glBufferSubData(GL_UNIFORM_BUFFER, 0, sizeof(glm::mat4), glm::value_ptr(projection));
 		glBindBuffer(GL_UNIFORM_BUFFER, 0);
 
 		// activate shader before setting uniforms
 		// -----------------------------------
-		switch (window->getActiveShaderID())
+		switch (w->getActiveShaderID())
 		{
 		case 1: // toon shader
-			window->getTimingInfo()->setRotationPaused(true);
+			w->getTimingInfo()->setRotationPaused(true);
 
 			toonShader.use();
 
@@ -360,19 +352,19 @@ int drawNPR()
 			toonShader.setMat4("model", modelMatrix);
 			toonShader.setMat3("normalMatrix", normalMatrix);
 			toonShader.setVec3("lightPos", lightPos);
-			toonShader.setVec3("viewPos", (window->getCameraInfo()->getCamera())->Position);
+			toonShader.setVec3("viewPos", (w->getCameraInfo()->getCamera())->Position);
 			toonShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 			toonShader.setVec3("objectColor", 1.0f, 0.5f, 0.5f);
 
 			// render model
-			window->getModelToRender()->Draw(toonShader);
+			w->getModelToRender()->Draw(toonShader);
 			break;
 
 		case 2: // Gooch shader
 		{
-			window->getLightingInfo()->setLightPaused(true);
-			lightPos = window->getLightingInfo()->getLIGHTPOS();
-			lightSourceFrame = window->getLightingInfo()->getCurrentLightSourcePosition();
+			w->getLightingInfo()->setLightPaused(true);
+			lightPos = w->getLightingInfo()->getLIGHTPOS();
+			lightSourceFrame = w->getLightingInfo()->getCurrentLightSourcePosition();
 
 			glBindFramebuffer(GL_FRAMEBUFFER, goochFBO);
 			glEnable(GL_DEPTH_TEST); // enable depth testing (is disabled for rendering screen-space quad)
@@ -408,7 +400,7 @@ int drawNPR()
 			goochShader.setMat4("model", modelMatrix);
 			goochShader.setMat3("normalMatrix", normalMatrix);
 			goochShader.setVec3("lightPos", lightPos);
-			goochShader.setVec3("viewPos", (window->getCameraInfo()->getCamera())->Position);
+			goochShader.setVec3("viewPos", (w->getCameraInfo()->getCamera())->Position);
 			goochShader.setVec3("coolColor", 0.0f, 0.0f, 0.8f);
 			goochShader.setVec3("warmColor", 0.4f, 0.4f, 0.0f);
 			goochShader.setVec3("objectColor", 1.0f, 1.0f, 1.0f);
@@ -418,7 +410,7 @@ int drawNPR()
 			goochShader.setFloat("beta", 0.5f);
 
 			// render model
-			window->getModelToRender()->Draw(goochShader);
+			w->getModelToRender()->Draw(goochShader);
 
 			// now blit multisampled buffer(s) to G intermediateFBO's G buffers
 			glBindFramebuffer(GL_READ_FRAMEBUFFER, goochFBO);
@@ -429,13 +421,13 @@ int drawNPR()
 			// the resulting texture is anti-aliased
 			glReadBuffer(GBuffers[0]); // image
 			glDrawBuffer(GBuffers[0]);
-			glBlitFramebuffer(0, 0, window->getWidth(), window->getHeight(), 0, 0, window->getWidth(), window->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
+			glBlitFramebuffer(0, 0, w->getWidth(), w->getHeight(), 0, 0, w->getWidth(), w->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
 			glReadBuffer(GBuffers[1]); // normal
 			glDrawBuffer(GBuffers[1]);
-			glBlitFramebuffer(0, 0, window->getWidth(), window->getHeight(), 0, 0, window->getWidth(), window->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
+			glBlitFramebuffer(0, 0, w->getWidth(), w->getHeight(), 0, 0, w->getWidth(), w->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
 			glReadBuffer(GBuffers[2]); // depth
 			glDrawBuffer(GBuffers[2]);
-			glBlitFramebuffer(0, 0, window->getWidth(), window->getHeight(), 0, 0, window->getWidth(), window->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
+			glBlitFramebuffer(0, 0, w->getWidth(), w->getHeight(), 0, 0, w->getWidth(), w->getHeight(), GL_COLOR_BUFFER_BIT, GL_NEAREST);
 
 			// Second pass: Do a full-screen edge detection filter over the normals from the first pass and draw feature edges
 			// bind back to default framebuffer and draw a quad plane with the attached framebuffer color textures
@@ -474,7 +466,7 @@ int drawNPR()
 		}
 
 		case 3: // hatching shader
-			window->getTimingInfo()->setRotationPaused(true);
+			w->getTimingInfo()->setRotationPaused(true);
 
 			hatchingShader.use();
 
@@ -496,15 +488,15 @@ int drawNPR()
 			hatchingShader.setMat4("model", modelMatrix);
 			hatchingShader.setMat3("normalMatrix", normalMatrix);
 			hatchingShader.setVec3("lightPos", lightPos);
-			hatchingShader.setVec3("viewPos", (window->getCameraInfo()->getCamera())->Position);
+			hatchingShader.setVec3("viewPos", (w->getCameraInfo()->getCamera())->Position);
 			hatchingShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 
 			// render model
-			window->getModelToRender()->Draw(hatchingShader);
+			w->getModelToRender()->Draw(hatchingShader);
 			break;
 
 		default: // Phong shader
-			window->getTimingInfo()->setRotationPaused(true);
+			w->getTimingInfo()->setRotationPaused(true);
 
 			phongShader.use();
 
@@ -514,14 +506,14 @@ int drawNPR()
 			phongShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 			phongShader.setVec3("lightPos", lightPos);
 			phongShader.setVec3("objectColor", 1.0f, 0.5f, 0.5f);
-			phongShader.setVec3("viewPos", (window->getCameraInfo()->getCamera())->Position);
+			phongShader.setVec3("viewPos", (w->getCameraInfo()->getCamera())->Position);
 
 			// render model
-			window->getModelToRender()->Draw(phongShader);
+			w->getModelToRender()->Draw(phongShader);
 		}
 
 
-		if (window->getNormalsDisplaySetting())
+		if (w->getNormalsDisplaySetting())
 		{
 			// draw model with normal visualizing geometry shader
 			normalShader.use();
@@ -530,18 +522,18 @@ int drawNPR()
 			normalShader.setMat4("model", modelMatrix);
 
 			// render model
-			window->getModelToRender()->Draw(normalShader);
+			w->getModelToRender()->Draw(normalShader);
 		}
 
 		// render the light source
 		// -----------------------------------
 		lightSourceShader.use();
 		// rotate light around y axis of the displayed object at the origin
-		if (!window->getLightingInfo()->isLightPaused())
+		if (!w->getLightingInfo()->isLightPaused())
 		{
-			lightSourceFrame = lightSourceFrame + window->getTimingInfo()->getDeltaTime() * window->getLightingInfo()->getDirectionFlip();
-			lightPos.x = sin(lightSourceFrame / window->getLightingInfo()->getLightSourceVelocity()) * window->getLightingInfo()->getLightPathRadius();
-			lightPos.z = cos(lightSourceFrame / window->getLightingInfo()->getLightSourceVelocity()) * window->getLightingInfo()->getLightPathRadius();
+			lightSourceFrame = lightSourceFrame + w->getTimingInfo()->getDeltaTime() * w->getLightingInfo()->getDirectionFlip();
+			lightPos.x = sin(lightSourceFrame / w->getLightingInfo()->getLightSourceVelocity()) * w->getLightingInfo()->getLightPathRadius();
+			lightPos.z = cos(lightSourceFrame / w->getLightingInfo()->getLightSourceVelocity()) * w->getLightingInfo()->getLightPathRadius();
 		}
 		modelMatrix = glm::mat4(1.0f);
 		modelMatrix = glm::translate(modelMatrix, lightPos);
@@ -555,7 +547,7 @@ int drawNPR()
 		renderTextShader.use();
 		renderTextShader.setMat4("projection", textProjection);
 		numFrames++;
-		if (window->getTimingInfo()->getCurrentFrame() - fpsTimer >= 1.0f)
+		if (w->getTimingInfo()->getCurrentFrame() - fpsTimer >= 1.0f)
 		{
 			numFramesToDisplay = numFrames;
 			numFrames = 0;
@@ -563,11 +555,11 @@ int drawNPR()
 		}
 		// print FPS on screen
 		std::string fpsText = std::string("FPS: ") + std::to_string(numFramesToDisplay);
-		RenderText(renderTextShader, fpsText.c_str(), window->screenText, textVAO, textVBO, 25.0f, 25.0f, 1.0f, glm::vec3(1.0, 0.0f, 0.0f));
+		RenderText(renderTextShader, fpsText.c_str(), w->screenText, textVAO, textVBO, 25.0f, 25.0f, 1.0f, glm::vec3(1.0, 0.0f, 0.0f));
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
-		glfwPollEvents();
-		glfwSwapBuffers(window->getGLFWWindow());
+		//glfwPollEvents();
+		//glfwSwapBuffers(w->getGLFWWindow());
 	}
 
 	// deallocate all resources
@@ -598,7 +590,7 @@ int drawNPR()
 	glDeleteTextures(1, &hatching4);
 	glDeleteTextures(1, &hatching5);
 
-	delete window;
+	delete w;
 
 	// glfw: terminate, clearing all previously allocated GLFW resources.
 	glfwTerminate();
@@ -606,173 +598,10 @@ int drawNPR()
 }
 
 
-// resize window callback
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-	glViewport(0, 0, width, height);
-}
-
-void processMovement(GLFWwindow* window, CameraInfo* cameraInfo, TimingInfo* timingInfo)
-{
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(FORWARD, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(BACKWARD, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(LEFT, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(RIGHT, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(UP, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ProcessKeyboard(DOWN, timingInfo->getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
-	{
-		(cameraInfo->getCamera())->ResetCamera();
-	}
-}
-
-
-//void processInput(GLFWwindow* window, Model** modelToRender)
-void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
-	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
-
-	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-	{
-		glfwSetWindowShouldClose(window, true);
-	}
-
-	// light movement
-	if (key == GLFW_KEY_SPACE && action == GLFW_PRESS)
-	{
-		if (myWindow->getActiveShaderID() == 2) // Gooch shading
-		{
-			myWindow->getTimingInfo()->setRotationPaused(!myWindow->getTimingInfo()->isRotationPaused());
-			myWindow->getLightingInfo()->setLightPaused(true);
-		}
-		else
-		{
-			myWindow->getLightingInfo()->setLightPaused(!myWindow->getLightingInfo()->isLightPaused());
-			myWindow->getTimingInfo()->setRotationPaused(true);
-		}
-	}
-	if (key == GLFW_KEY_RIGHT && action == GLFW_PRESS) // rotate light counter-clockwise
-	{
-		if (myWindow->getActiveShaderID() == 2) // Gooch shading
-		{
-			myWindow->getTimingInfo()->setRotationPaused(false);
-		}
-		else
-		{
-			myWindow->getLightingInfo()->setLightPaused(false);
-		}
-		myWindow->getLightingInfo()->setDirectionFlip(1.0f);
-	}
-	if (key == GLFW_KEY_LEFT && action == GLFW_PRESS) // rotate light clockwise
-	{
-		if (myWindow->getActiveShaderID() == 2) // Gooch shading
-		{
-			myWindow->getTimingInfo()->setRotationPaused(false);
-		}
-		else
-		{
-			myWindow->getLightingInfo()->setLightPaused(false);
-		}
-		myWindow->getLightingInfo()->setDirectionFlip(-1.0f);
-	}
-	if ((key == GLFW_KEY_RIGHT || key == GLFW_KEY_LEFT) && action == GLFW_RELEASE)
-	{
-		if (myWindow->getActiveShaderID() == 2) // Gooch shading
-		{
-			myWindow->getTimingInfo()->setRotationPaused(true);
-		}
-		else
-		{
-			myWindow->getLightingInfo()->setLightPaused(true);
-		}
-	}
-
-	// shaders
-	if (key == GLFW_KEY_1 && action == GLFW_PRESS) // toon shading
-	{
-		myWindow->setActiveShaderID(1);
-	}
-	if (key == GLFW_KEY_2 && action == GLFW_PRESS) // Gooch shading
-	{
-		myWindow->setActiveShaderID(2);
-	}
-	if (key == GLFW_KEY_3 && action == GLFW_PRESS) // hatching
-	{
-		myWindow->setActiveShaderID(3);
-	}
-	if (key == GLFW_KEY_4 && action == GLFW_PRESS) // Phong shading
-	{
-		myWindow->setActiveShaderID(4);
-	}
-	if (key == GLFW_KEY_N && action == GLFW_PRESS) // toggle normal vectors
-	{
-		myWindow->flipNormalsDisplaySetting();
-	}
-
-	/*
-	use linked list instead of vector
-
-	if (key == GLFW_KEY_TAB && action == GLFW_PRESS)
-	{
-		vectorIndex++;
-
-		if (vectorIndex > modelsList.size() - 1)
-			vectorIndex = 0;
-
-		modelToRender = modelsList[vectorIndex];
-	}*/
-}
-
-// glfw: whenever the mouse moves, this callback is called
-// -------------------------------------------------------
-void mouse_callback(GLFWwindow* window, double xpos, double ypos)
-{
-	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
-
-	if (myWindow->getCameraInfo()->getLastX() < 0 || myWindow->getCameraInfo()->getLastY() < 0)
-	{
-		myWindow->getCameraInfo()->setLastX(xpos);
-		myWindow->getCameraInfo()->setLastY(ypos);
-	}
-
-	float xoffset = xpos - myWindow->getCameraInfo()->getLastX();
-	float yoffset = myWindow->getCameraInfo()->getLastY() - ypos; // reversed since y-coordinates go from bottom to top
-
-	myWindow->getCameraInfo()->setLastX(xpos);
-	myWindow->getCameraInfo()->setLastY(ypos);
-
-	myWindow->getCameraInfo()->getCamera()->ProcessMouseMovement(xoffset, yoffset);
-}
-
-// glfw: whenever the mouse scroll wheel scrolls, this callback is called
-// ----------------------------------------------------------------------
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
-{
-	WindowS* myWindow = (WindowS*)glfwGetWindowUserPointer(window);
-	myWindow->getCameraInfo()->getCamera()->ProcessMouseScroll(yoffset);
-}
 
 // Bind textures and buffers to frame buffer object
 // ----------------------------------------------------------------------
-void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil) {
+void configureFBO(VDPMSynthesizerViewerWidget* w, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil) {
 
 	glGenFramebuffers(1, FBO);
 	glBindFramebuffer(GL_FRAMEBUFFER, *FBO);
@@ -787,7 +616,7 @@ void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool 
 		{
 			glBindTexture(GL_TEXTURE_2D_MULTISAMPLE, *(*textures)[i]);
 
-			glTexImage2DMultisample(GL_TEXTURE_2D_MULTISAMPLE, window->getNumSamples(), GL_RGB, window->getWidth(), window->getHeight(), GL_TRUE);
+			glTexImage2DMultisample(GL_TEXTURE_2D_MULTISAMPLE, w->getNumSamples(), GL_RGB, w->getWidth(), w->getHeight(), GL_TRUE);
 
 			glTexParameteri(GL_TEXTURE_2D_MULTISAMPLE, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 			glTexParameteri(GL_TEXTURE_2D_MULTISAMPLE, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -811,7 +640,7 @@ void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool 
 			else
 			{
 				glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-				glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, window->getWidth(), window->getHeight(), 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
+				glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, w->getWidth(), w->getHeight(), 0, GL_RGB, GL_UNSIGNED_BYTE, NULL);
 			}
 
 			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -832,11 +661,11 @@ void configureFBO(WindowS* window, GLuint* FBO, vector<GLuint*>* textures, bool 
 		// use a single renderbuffer object for both a depth AND stencil buffer
 		if (multisample)
 		{
-			glRenderbufferStorageMultisample(GL_RENDERBUFFER, window->getNumSamples(), GL_DEPTH24_STENCIL8, window->getWidth(), window->getHeight());
+			glRenderbufferStorageMultisample(GL_RENDERBUFFER, w->getNumSamples(), GL_DEPTH24_STENCIL8, w->getWidth(), w->getHeight());
 		}
 		else
 		{
-			glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, window->getWidth(), window->getHeight());
+			glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH24_STENCIL8, w->getWidth(), w->getHeight());
 		}
 
 		glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_RENDERBUFFER, rbo); // now actually attach it
@@ -1019,4 +848,37 @@ unsigned int TextureFromFile(const char *path, const string &directory, bool gam
 	}
 
 	return textureID;
+}
+
+void processMovement(VDPMSynthesizerViewerWidget* w, CameraInfo* cameraInfo, TimingInfo* timingInfo)
+{/*
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(FORWARD, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(BACKWARD, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(LEFT, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(RIGHT, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(UP, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ProcessKeyboard(DOWN, timingInfo->getDeltaTime());
+	}
+	if (glfwGetKey(window, GLFW_KEY_R) == GLFW_PRESS)
+	{
+		(cameraInfo->getCamera())->ResetCamera();
+	}
+	*/
 }
