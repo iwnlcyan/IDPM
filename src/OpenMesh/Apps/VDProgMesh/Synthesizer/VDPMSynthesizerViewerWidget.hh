@@ -291,7 +291,10 @@ public:
   /// open view-dependent progressive mesh
   void open_vd_prog_mesh(const char* _filename);
 
-  //VDPMSynthesizerViewerWidget* getVDPMSynthesizerViewerWidget()
+  VDPMSynthesizerViewerWidget* getVDPMSynthesizerViewerWidget()
+  {
+	  return this;
+  }
  
   CameraInfo* getCameraInfo()
   {
@@ -346,6 +349,7 @@ private:
   ViewingParameters   viewing_parameters_;
   float               kappa_square_;
   bool                adaptive_mode_;
+  bool                ToonShading_mode = false;
   int                 activeShaderID;
   int                 numSamples;
 
@@ -388,7 +392,7 @@ public:
 
   void adaptive_refinement();	
 
-  int drawNPR(VDPMSynthesizerViewerWidget* w);
+  int drawNPR();
 
   bool qrefine(VHierarchyNodeHandle _node_handle);		
 

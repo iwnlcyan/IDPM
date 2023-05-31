@@ -564,10 +564,11 @@ MeshViewerWidgetT<M>::draw_openmesh(const std::string& _draw_mode)
   }
 
 
-  else if (_draw_mode == "Toon Shading") // -------------------------------------
+  /*else if (_draw_mode == "Toon Shading") // -------------------------------------
   {
-    //w->drawNPR();
+    
   }
+  */
 
 }
 

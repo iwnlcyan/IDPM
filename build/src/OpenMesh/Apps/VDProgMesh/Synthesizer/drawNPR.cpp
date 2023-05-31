@@ -35,9 +35,9 @@
 void configureFBO(VDPMSynthesizerViewerWidget* w, GLuint* FBO, vector<GLuint*>* textures, bool multisample, bool mipmap, bool depthOrStencil);
 
 int VDPMSynthesizerViewerWidget::
-drawNPR(VDPMSynthesizerViewerWidget* w)
+drawNPR()
 {
-
+	VDPMSynthesizerViewerWidget* w = getVDPMSynthesizerViewerWidget();
 	// create window
 	//GLFWwindow* window = glfwCreateWindow(instance->getWidth(), instance->getHeight(), "Shaders", NULL, NULL);
 	if (w->context() == NULL)

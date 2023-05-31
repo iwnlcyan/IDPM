@@ -97,6 +97,7 @@ VDPMSynthesizerViewerWidget::VDPMSynthesizerViewerWidget(QWidget* _parent, const
 	lightingInfo = new LightingInfo();
 
     adaptive_mode_ = true;
+	ToonShading_mode = false;
 }
 
 VDPMSynthesizerViewerWidget::~VDPMSynthesizerViewerWidget()//Destructor
@@ -114,7 +115,12 @@ draw_scene(const std::string &_draw_mode)
   {    
     adaptive_refinement();
   }
-  MeshViewerWidget::draw_scene(_draw_mode);  
+  if (_draw_mode == "Toon Shading")
+  {
+	  this->drawNPR();
+  }
+  else 
+	  MeshViewerWidget::draw_scene(_draw_mode);  
 }
 
 

@@ -1,4 +1,5 @@
-﻿  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Core/CMakeLists.txt
+﻿E:\vs\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : 文件“e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\build\src\openmesh\core\openmeshcore.dir\release\plyreader.obj”正由另一进程使用，因此该进程无法访问此文件。
+  Building Custom Rule E:/1KMD课程/Research/Illumination Guided LOD/IDPM/OpenMesh-9.0/OpenMesh-9.0.0/src/OpenMesh/Core/CMakeLists.txt
   BinaryHelper.cc
   IOManager.cc
   OMFormat.cc
