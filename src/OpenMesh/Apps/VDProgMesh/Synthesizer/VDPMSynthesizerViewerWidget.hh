@@ -341,6 +341,23 @@ public:
 	  return numSamples;
   }
 
+  void setActiveShaderID(int ID)
+  {
+	  activeShaderID = ID;
+  }
+  void flipNormalsDisplaySetting()
+  {
+	  normalsDisplaySetting = !normalsDisplaySetting;
+  }
+  void addModel(Model* model)
+  {
+	  modelsList.push_back(model);
+  }
+  void setActiveModelIndex(int index)
+  {
+	  activeModelIndex = index;
+  }
+
 private:
 
   QString             qFilename_;

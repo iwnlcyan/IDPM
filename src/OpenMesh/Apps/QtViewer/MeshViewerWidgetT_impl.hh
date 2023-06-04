@@ -668,16 +668,6 @@ MeshViewerWidgetT<M>::draw_scene(const std::string& _draw_mode)
   }
 
 
-  else if (_draw_mode == "Toon Shading")
-  {
-	  glDisable(GL_LIGHTING);
-	  glEnable(GL_CULL_FACE);
-	  glCullFace(GL_BACK);
-	  glEnable(GL_DEPTH_TEST); // z-buffer test
-	  //glDepthFunc(GL_LESS);
-	  glShadeModel(GL_SMOOTH);
-	  draw_openmesh(_draw_mode);
-  }
 
   if (show_vnormals_)
   {

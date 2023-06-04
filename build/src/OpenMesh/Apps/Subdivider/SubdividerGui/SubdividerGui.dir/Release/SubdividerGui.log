@@ -1,3 +1,11 @@
 ﻿  Automatic MOC for target SubdividerGui
+  mocs_compilation.cpp
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
   QGLViewerWidget.cc
-  SubdividerGui.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Subdivider\SubdividerGui\Release\SubdividerGui.exe
+  SubdivideWidget.cc
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\SubdividerGui\..\..\..\..\OpenMesh/Tools/Subdivider/Uniform/CompositeLoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\src\OpenMesh\Apps\Subdivider\SubdividerGui\..\..\..\..\OpenMesh/Tools/Subdivider/Uniform/LoopT.hh : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  qtsubdivider.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  正在生成代码...

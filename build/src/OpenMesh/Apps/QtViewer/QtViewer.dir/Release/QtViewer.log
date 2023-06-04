@@ -1,3 +1,9 @@
 ﻿  Automatic MOC for target QtViewer
+  mocs_compilation.cpp
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  MeshViewerWidget.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
   QGLViewerWidget.cc
-  QtViewer.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\QtViewer\Release\QtViewer.exe
+  meshviewer.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  正在生成代码...

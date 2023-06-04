@@ -46,15 +46,8 @@ drawNPR()
 		return -1;
 	}
 	makeCurrent();
-	//initializeGL();
+	glewInit();
 
-
-	// initialize glad: load all OpenGL function pointers
-	//if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-	//{
-	//	std::cout << "Failed to initialize GLAD" << std::endl;
-	//	return -1;
-	//}
 
 	// tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
 	stbi_set_flip_vertically_on_load(true);
@@ -83,11 +76,11 @@ drawNPR()
 	// -----------
 	//Model ourModel(FileSystem::getPath("Models/nanosuit/nanosuit.obj"));
 	Model teapotModel(FileSystem::getPath("Models/bunny.obj"));
-	Model backpackModel(FileSystem::getPath("Models/dragon.obj"));
-	Model bunnyModel(FileSystem::getPath("Models/StanfordBunny.obj"));
+	//Model backpackModel(FileSystem::getPath("Models/dragon.obj"));
+	//Model bunnyModel(FileSystem::getPath("Models/StanfordBunny.obj"));
 	//Model ourModel(FileSystem::getPath("Models/Ravenors-Reading Corner/Ravenors-Reading Corner.obj"));
 
-	//w->addModel(&teapotModel);
+	w->addModel(&teapotModel);
 	//w->addModel(&backpackModel);
 	//w->addModel(&bunnyModel);
 
@@ -454,8 +447,8 @@ drawNPR()
 			sobelShader.setVec4("_OutlineColor", 0.0f, 0.0f, 0.0f, 1.0f);
 			sobelShader.setFloat("depthThreshold", 0.04f);
 			sobelShader.setFloat("normalThreshold", 0.085f);
-			/*sobelShader.setFloat("depthThreshold", 0.075f);
-			sobelShader.setFloat("normalThreshold", 0.075f);*/
+			//sobelShader.setFloat("depthThreshold", 0.075f);
+			//sobelShader.setFloat("normalThreshold", 0.075f);
 
 			// finally render quad
 			glBindVertexArray(quadVAO);

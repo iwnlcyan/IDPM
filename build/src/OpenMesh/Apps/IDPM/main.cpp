@@ -11,7 +11,7 @@
 #include <vector>
 #include <string>
 
-#include "Headers/window.h"
+//#include "Headers/window.h"
 #include "Headers/render_text.h"
 #include "Headers/shader.h"
 #include "Headers/filesystem.h"
@@ -29,5 +29,5 @@
 
 int main(int argc, char** argv)
 {
-	drawNPR();
+	//drawNPR();
 }

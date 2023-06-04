@@ -1,3 +1,11 @@
 ﻿  Automatic MOC for target DecimaterGui
+  mocs_compilation.cpp
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  DecimaterViewerWidget.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  decimaterviewer.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
+  MeshViewerWidget.cc
+e:\1kmd课程\research\illumination guided lod\idpm\openmesh-9.0\openmesh-9.0.0\src\openmesh\apps\qtviewer\MeshViewerWidgetT_impl.hh(58): fatal error C1083: 无法打开包括文件: “Headers/drawNPR.h”: No such file or directory
   QGLViewerWidget.cc
-  DecimaterGui.vcxproj -> E:\1KMD课程\Research\Illumination Guided LOD\IDPM\OpenMesh-9.0\OpenMesh-9.0.0\build\src\OpenMesh\Apps\Decimating\DecimaterGui\Release\DecimaterGui.exe
+  正在生成代码...
